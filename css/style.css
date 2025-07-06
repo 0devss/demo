@@ -1743,9 +1743,18 @@ button.ltr {
 
 
 
+.team-block-one{
+  position: relative;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  border:1px solid #c5c5c5;
+
+}
 
 
-
+.team-block-one .lower-content {padding:8px}
 
 
 
