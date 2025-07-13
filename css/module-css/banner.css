@@ -240,7 +240,7 @@
   padding: 72px 0px 68px 0px;
 }
 
-.banner-style-three .pattern-layer{
+ .pattern-layer{
   position: absolute;
   left: 0px;
   top: 0px;
@@ -249,6 +249,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: -1;
 }
 
 .banner-style-three .content-box h2{
