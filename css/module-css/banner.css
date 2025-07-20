@@ -363,8 +363,7 @@
 }
 
 .banner-carousel .slide-item{
-  position: relative;
-  padding: 187px 0px;
+  position: relative; 
   border-radius: 20px;
   overflow: hidden;
 }
@@ -787,7 +786,7 @@
   }
 
   .banner-carousel .slide-item{
-    padding: 90px 0px;
+     
   }
 
   .banner-style-four .shape-box{
