@@ -150,6 +150,10 @@
   padding: 28px 30px 31px 30px;
 }
 
+.news-block-two .inner-box .lower-content h5{
+  nin-height:75px
+}
+
 .news-block-two .inner-box .lower-content .category{
   position: absolute;
   left: 30px;
@@ -436,6 +440,7 @@
     display: none;
   }
 }
+
 
 
 
