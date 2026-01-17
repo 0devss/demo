@@ -151,7 +151,7 @@
 }
 
 .news-block-two .inner-box .lower-content h5{
-  nin-height:75px
+  min-height:75px
 }
 
 .news-block-two .inner-box .lower-content .category{
@@ -440,6 +440,7 @@
     display: none;
   }
 }
+
 
 
 
