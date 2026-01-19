@@ -239,7 +239,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="icon-21"></span>', '<span class="icon-22"></span>' ],
+			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
