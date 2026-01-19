@@ -53,7 +53,7 @@
     <style>
         .table-container {
             overflow-x: auto;
-            background-color: #f4f4f4;
+            background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
@@ -311,43 +311,37 @@
         </div>
 
 
-        <section class="subscribe-section pt_100 pb_100" style="position:relative">
+        <section class="subscribe-section" style="position:relative">
             <div class="bg-layer parallax-bg" data-parallax='{"y": 100}' style="background-image: url(images/bg.webp);">
             </div>
             <div class="auto-container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-6" style=" background: #0c5695 ;
+                    position: relative;
+                    padding: 25px; ">
                         <h2 style="color:#fff">Benefits of Working in Germany </h2><br>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div
-                            style="background: rgba(255, 255, 255, 0.8); padding:30px 20px; border-radius: 15px; position: relative; border:1px solid #fff">
 
 
-                            <h5>💶 Attractive Salary</h5>
-                            <p>Earn a competitive monthly salary starting from €2,800–€3,500, with extra pay for shifts
-                                and holidays. </p><br>
+                        <h5>💶 Attractive Salary</h5>
+                        <p style="color: #fff;">Earn a competitive monthly salary starting from €2,800–€3,500, with
+                            extra pay for shifts
+                            and holidays. </p><br>
 
-                            <h5>🛡️ Job Security</h5>
-                            <p>Germany’s high demand for nurses ensures stable, long-term employment and career
-                                continuity. </p>
+                        <h5>🛡️ Job Security</h5>
+                        <p style="color: #fff;">Germany's high demand for nurses ensures stable, long-term employment
+                            and career
+                            continuity. </p><br>
 
-                        </div>
-                    </div>
+                        <h5>🏥 Modern Work Environment</h5>
+                        <p style="color: #fff;">Work in well-equipped hospitals with clear roles, regulated hours, and
+                            ethical standards.
+                        </p><br>
 
-                    <div class="col-md-6">
-                        <div
-                            style="background: rgba(255, 255, 255, 0.8); padding:30px 20px; border-radius: 15px; position: relative; border:1px solid #fff">
+                        <h5>🧾 Social Benefits</h5>
+                        <p style="color: #fff;">Enjoy health insurance, pension contributions, paid leave, and full
+                            legal employment
+                            rights. </p>
 
-                            <h5>🏥 Modern Work Environment</h5>
-                            <p>Work in well-equipped hospitals with clear roles, regulated hours, and ethical standards.
-                            </p><br>
-
-                            <h5>🧾 Social Benefits</h5>
-                            <p>Enjoy health insurance, pension contributions, paid leave, and full legal employment
-                                rights. </p>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -437,7 +431,7 @@
 
 
 
-        <section class=" p_relative pl_100 pr_100 pt_80 pb_80" style="background-color:#EFF2E6">
+        <section class=" p_relative   pt_40 pb_80" style="background-color:#EFF2E6">
 
 
 
@@ -448,99 +442,24 @@
                         <h2>Germany vs. Other Top Destinations</h2><br>
 
                         <div class="table-container">
-                            <table border="1" cellpadding="10" cellspacing="0"
-                                style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+                            <table>
                                 <thead>
                                     <tr>
-                                        <th>Benefit</th>
-                                        <th>Germany</th>
-                                        <th>Canada</th>
-                                        <th>UK</th>
-                                        <th>Australia</th>
-                                        <th>New Zealand</th>
+                                        <th class="benefit-col">Benefit</th>
+                                        <th class="germany-col">Germany</th>
+                                        <th class="dynamic-col">
+                                            <select id="countrySelector" style="color:#fff"
+                                                onchange="updateComparison()">
+                                                <option value="select">Select Country to Compare</option>
+                                                <option value="canada">Canada</option>
+                                                <option value="uk">UK</option>
+                                                <option value="australia">Australia</option>
+                                                <option value="nz">New Zealand</option>
+                                            </select>
+                                        </th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><strong>Average Nurse Salary (Annual, Gross)</strong></td>
-                                        <td>€38,000 – €50,000</td>
-                                        <td>CAD $60,000 – $80,000</td>
-                                        <td>£27,000 – £40,000</td>
-                                        <td>AUD $65,000 – $85,000</td>
-                                        <td>NZD $55,000 – $75,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Cost of Living</strong></td>
-                                        <td>Moderate</td>
-                                        <td>High (varies by city)</td>
-                                        <td>High (especially London)</td>
-                                        <td>High (Sydney/Melbourne)</td>
-                                        <td>Moderate to High</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Work-Life Balance</strong></td>
-                                        <td>Excellent (35–40 hrs/week)</td>
-                                        <td>Good</td>
-                                        <td>Average</td>
-                                        <td>Good</td>
-                                        <td>Excellent</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Paid Annual Leave</strong></td>
-                                        <td>20–30 days</td>
-                                        <td>2–4 weeks</td>
-                                        <td>28 days</td>
-                                        <td>20 days + holidays</td>
-                                        <td>20 days + public holidays</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Public Healthcare Access</strong></td>
-                                        <td>Yes (universal)</td>
-                                        <td>Yes (public + private mix)</td>
-                                        <td>Yes (NHS)</td>
-                                        <td>Yes (Medicare)</td>
-                                        <td>Yes (public system)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Pathway to Permanent Residency</strong></td>
-                                        <td>Available after 3–5 years</td>
-                                        <td>Yes (through Express Entry)</td>
-                                        <td>Yes (work to settlement)</td>
-                                        <td>Yes (skilled migration)</td>
-                                        <td>Yes (resident visa options)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Family Benefits</strong></td>
-                                        <td>Child allowance, parental leave</td>
-                                        <td>Child benefit, healthcare</td>
-                                        <td>Child benefit, NHS access</td>
-                                        <td>Childcare subsidies, Medicare</td>
-                                        <td>Free education, healthcare</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Language Requirement</strong></td>
-                                        <td>B1/B2 German</td>
-                                        <td>IELTS/CLB 7+</td>
-                                        <td>IELTS 7.0</td>
-                                        <td>OET/IELTS</td>
-                                        <td>OET/IELTS</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Recognition of Foreign Qualifications</strong></td>
-                                        <td>Yes (with licensing)</td>
-                                        <td>Yes (with registration)</td>
-                                        <td>Yes (NMC registration)</td>
-                                        <td>Yes (AHPRA)</td>
-                                        <td>Yes (NCNZ)</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Visa Sponsorship</strong></td>
-                                        <td>Yes (nursing shortage)</td>
-                                        <td>Yes (skilled worker programs)</td>
-                                        <td>Yes (Health and Care visa)</td>
-                                        <td>Yes (employer sponsorship)</td>
-                                        <td>Yes (skilled shortage list)</td>
-                                    </tr>
+                                <tbody id="tableBody">
                                 </tbody>
                             </table>
                         </div>
@@ -550,27 +469,7 @@
             </div>
 
 
-            <!--  <div class="auto-container">
-                    <div class="row clearfix" style="padding:40px 0"> 
-                     <div class="col-sm-6">
-                        <div style="margin-top:30px;  background: linear-gradient(45deg, var(--secondary-color), var(--theme-color-2)); text-align: center; border-radius: 20px;
-                        padding: 20px 30px;">
-                        <h2 style="color:#fff">Why Germany over Canada, UK & Australia    </h2> <br>    <a href="index.html" class="theme-btn banner-btn"><span>Lets Compare</span></a>
-                    </div>
 
-                     </div>
-
- <div class="col-sm-6">
-                        <div style="margin-top:30px;  background: linear-gradient(45deg, var(--theme-color-2),  var(--secondary-color)); text-align: center; border-radius: 20px;
-                        padding: 20px 30px;">
-                        <h2 style="color:#fff">Check Requirements for working in Germany   </h2> <br>    <a href="index.html" class="theme-btn banner-btn"><span>Know More</span></a>
-                    </div>
-
-                     </div>
-
-
-                 </div>
-             </div> -->
 
         </section>
 
@@ -817,6 +716,101 @@
 
     <!-- main-js -->
     <script src="js/script.js"></script>
+
+    <script>
+        const data = {
+            select: {
+                salary: "",
+                cost: "",
+                balance: "",
+                leave: "",
+                healthcare: "",
+                pr: "",
+                family: "",
+                language: "",
+                recognition: "",
+                visa: " "
+            },
+            canada: {
+                salary: "CAD $60,000 – $80,000",
+                cost: "High (varies by city)",
+                balance: "Good",
+                leave: "2–4 weeks",
+                healthcare: "Yes (public + private mix)",
+                pr: "Yes (through Express Entry)",
+                family: "Child benefit, healthcare",
+                language: "IELTS/CLB 7+",
+                recognition: "Yes (with registration)",
+                visa: "Yes (skilled worker programs)"
+            },
+            uk: {
+                salary: "£27,000 – £40,000",
+                cost: "High (especially London)",
+                balance: "Average",
+                leave: "28 days",
+                healthcare: "Yes (NHS)",
+                pr: "Yes (work to settlement)",
+                family: "Child benefit, NHS access",
+                language: "IELTS 7.0",
+                recognition: "Yes (NMC registration)",
+                visa: "Yes (Health and Care visa)"
+            },
+            australia: {
+                salary: "AUD $65,000 – $85,000",
+                cost: "High (Sydney/Melbourne)",
+                balance: "Good",
+                leave: "20 days + holidays",
+                healthcare: "Yes (Medicare)",
+                pr: "Yes (skilled migration)",
+                family: "Childcare subsidies, Medicare",
+                language: "OET/IELTS",
+                recognition: "Yes (AHPRA)",
+                visa: "Yes (employer sponsorship)"
+            },
+            nz: {
+                salary: "NZD $55,000 – $75,000",
+                cost: "Moderate to High",
+                balance: "Excellent",
+                leave: "20 days + public holidays",
+                healthcare: "Yes (public system)",
+                pr: "Yes (resident visa options)",
+                family: "Free education, healthcare",
+                language: "OET/IELTS",
+                recognition: "Yes (NCNZ)",
+                visa: "Yes (skilled shortage list)"
+            }
+        };
+
+        const benefits = [
+            { key: 'salary', label: 'Average Nurse Salary', ger: '€38,000 – €50,000' },
+            { key: 'cost', label: 'Cost of Living', ger: 'Moderate' },
+            { key: 'balance', label: 'Work-Life Balance', ger: 'Excellent (35–40 hrs/week)' },
+            { key: 'leave', label: 'Paid Annual Leave', ger: '20–30 days' },
+            { key: 'healthcare', label: 'Public Healthcare', ger: 'Yes (universal)' },
+            { key: 'pr', label: 'Pathway to PR', ger: 'Available after 3–5 years' },
+            { key: 'family', label: 'Family Benefits', ger: 'Child allowance, parental leave' },
+            { key: 'language', label: 'Language Requirement', ger: 'B1/B2 German' },
+            { key: 'recognition', label: 'Recognition of Qual.', ger: 'Yes (with licensing)' },
+            { key: 'visa', label: 'Visa Sponsorship', ger: 'Yes (nursing shortage)' }
+        ];
+
+        function updateComparison() {
+            const selected = document.getElementById('countrySelector').value;
+            const countryData = data[selected];
+            const tbody = document.getElementById('tableBody');
+
+            tbody.innerHTML = benefits.map(benefit => `
+                <tr>
+                    <td class="benefit-col">${benefit.label}</td>
+                    <td class="germany-col">${benefit.ger}</td>
+                    <td class="dynamic-col">${countryData[benefit.key]}</td>
+                </tr>
+            `).join('');
+        }
+
+        // Initialize table on load
+        updateComparison();
+    </script>
 
 </body><!-- End of .page_wrapper -->
 

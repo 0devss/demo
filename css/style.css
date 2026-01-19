@@ -68,6 +68,7 @@
   --theme-color-2: #13a8d5;
   --secondary-color: #0c406c;
   --text-color: #666666;
+  --text-white: #ffffff;
   --title-color: #111111;
   --text-font: "Inter", sans-serif;
   --title-font: "Outfit", sans-serif;
@@ -959,7 +960,7 @@ html.lenis {
   width: 100%;
   font-size: 16px;
   line-height: 26px;
-  color: var(--text-color);
+  color: var(--text-white);
   font-family: var(--text-font);
   padding-right: 14px;
 }
@@ -982,7 +983,7 @@ html.lenis {
 }
 
 .nice-select .list {
-  max-height: 160px;
+  max-height: 250px;
   overflow-x: hidden;
   overflow-y: auto;
 }
