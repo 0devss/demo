@@ -63,27 +63,25 @@
             <div class="header-top">
                 <div class="container">
                     <div class="top-inner">
-                        <ul class="info">
-                            <li>
-                                <img src="images/icons/icon-6.png" alt="">
-                                <a href="tel:999">+49 987 6666 543</a>
-                            </li>
-                            <li>
-                                <img src="images/icons/icon-7.png" alt="">
-                                <a href="mailto:mail@example.com">mail@example.com</a>
-                            </li>
-                        </ul>
+                        <div class="left-column">
+                            <ul class="info">
+                                <li>
+                                    <img src="images/icons/icon-6.png" alt="">
+                                    <a href="tel:999">+49 987 6666 543</a>
+                                </li>
+                                <li>
+                                    <img src="images/icons/icon-7.png" alt="">
+                                    <a href="mailto:info@rmcnurses.de">info@rmcnurses.de</a>
+                                </li>
+                                <a href="#"><img src="images/instagram-icon.webp"
+                                        style="max-width: 25px; margin-right: 10px;"></a>
+                                <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a>
+                            </ul>
+                        </div>
                         <div class="right-column">
-                            <div class="language-picker js-language-picker mr_30" data-trigger-class="btn btn--subtle">
-                                <form action="index-2.html" class="language-picker__form">
-                                    <label for="language-picker-select">Select your language</label>
-                                    <select name="language-picker-select" id="language-picker-select">
-                                        <option lang="de" value="deutsch">DE</option>
-                                        <option lang="en" value="english" selected="">EN</option>
-                                    </select>
-                                </form>
-                            </div>
-
+                            <div class="gtranslate_wrapper"></div>
+                            <script>window.gtranslateSettings = { "default_language": "en", "native_language_names": true, "languages": ["en", "de", "pa"], "wrapper_selector": ".gtranslate_wrapper", "flag_size": 24, "switcher_horizontal_position": "inline" }</script>
+                            <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
                         </div>
                     </div>
                 </div>
@@ -161,10 +159,9 @@
 
                 <div class="social-links">
                     <ul class="clearfix">
-                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                        <li> <a href="#"><img src="images/instagram-icon.webp"
+                                    style="max-width: 25px; margin-right: 2px;"></a> </li>
+                        <li> <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -293,8 +290,8 @@
                                 <figure class="footer-logo mb_20"><a href="index.html"><img src="images/logo.jpg"
                                             style="max-height: 80px; padding:15px 30px; border-radius: 15px; background-color: #fff;"
                                             alt=""></a></figure>
-                                <p>We are an international recruitment agency specializing in placing Indian nurses and
-                                    healthcare professionals in Germany. </p>
+                                <p>We are a German-based recruitment agency with Indian roots specialized in placing
+                                    Indian nurses and healthcare professionals in Germany. </p>
                                 <div class="btn-box"><a href="#" class="theme-btn btn-one"><span>Read More</span></a>
                                 </div>
                             </div>
@@ -327,19 +324,23 @@
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
                                         <li><a href="#">Address:
-                                                Street no. 1, ABC city, XYZ state, Germany</a></li>
+                                                RMC Nurses GmbH
+                                                Alt Oberliederbach 35
+                                                65835 Liederbach am Taunus
+                                                Germany
+                                            </a></li>
 
                                         <li><a href="#">Mobile:
                                                 +49 999 7865 43232</a></li>
 
                                         <li><a href="#">Email:
-                                                mail@example.com</a></li>
+                                                info@rmcnurses.de
+                                            </a></li>
                                     </ul><br>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="icon-22"></i></a></li>
-                                        <li><a href="#"><i class="icon-23"></i></a></li>
-                                        <li><a href="#"><i class="icon-24"></i></a></li>
-                                    </ul>
+                                    <a href="#"><img src="images/instagram-icon.webp"
+                                            style="max-width: 35px; margin-right: 10px;"></a>
+                                    <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 35px;"></a>
+
                                 </div>
                             </div>
                         </div>
@@ -353,7 +354,11 @@
                 <div class="auto-container">
                     <div class="bottom-inner">
                         <div class="copyright">
-                            <p>Copyright &copy; 2025. All rights reserved.</p>
+                            <p>Copyright &copy; <span id="year"></span>. All rights reserved.</p>
+
+                            <script>
+                                document.getElementById("year").textContent = new Date().getFullYear();
+                            </script>
                         </div>
                     </div>
                 </div>
