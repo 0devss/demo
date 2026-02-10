@@ -63,18 +63,23 @@
             <div class="header-top">
                 <div class="container">
                     <div class="top-inner">
-                        <ul class="info">
-                            <li>
-                                <img src="images/icons/icon-6.png" alt="">
-                                <a href="tel:999">+49 987 6666 543</a>
-                            </li>
-                            <li>
-                                <img src="images/icons/icon-7.png" alt="">
-                                <a href="mailto:mail@example.com">mail@example.com</a>
-                            </li>
-                        </ul>
+                        <div class="left-column">
+                            <ul class="info">
+                                <li>
+                                    <img src="images/icons/icon-6.png" alt="">
+                                    <a href="tel:999">+49 987 6666 543</a>
+                                </li>
+                                <li>
+                                    <img src="images/icons/icon-7.png" alt="">
+                                    <a href="mailto:info@rmcnurses.de">info@rmcnurses.de</a>
+                                </li>
+                                <a href="#"><img src="images/instagram-icon.webp"
+                                        style="max-width: 25px; margin-right: 10px;"></a>
+                                <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a>
+                            </ul>
+                        </div>
                         <div class="right-column">
-                            <div class="language-picker js-language-picker mr_30" data-trigger-class="btn btn--subtle">
+                            <!--  <div class="language-picker js-language-picker mr_30" data-trigger-class="btn btn--subtle">
                                 <form action="index-2.html" class="language-picker__form">
                                     <label for="language-picker-select">Select your language</label>
                                     <select name="language-picker-select" id="language-picker-select">
@@ -82,8 +87,10 @@
                                         <option lang="en" value="english" selected="">EN</option>
                                     </select>
                                 </form>
-                            </div>
-
+                            </div> -->
+                            <div class="gtranslate_wrapper"></div>
+                            <script>window.gtranslateSettings = { "default_language": "en", "native_language_names": true, "languages": ["en", "de", "pa"], "wrapper_selector": ".gtranslate_wrapper", "flag_size": 24, "switcher_horizontal_position": "inline" }</script>
+                            <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
                         </div>
                     </div>
                 </div>
@@ -140,7 +147,8 @@
                             </nav>
                         </div>
                         <div class="menu-right-content">
-                            <div class="btn-box"><a href="index.html" class="theme-btn btn-one">Consultation</a></div>
+                            <div class="btn-box"><a href="index.html" class="theme-btn btn-one">Consultation</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,10 +169,9 @@
 
                 <div class="social-links">
                     <ul class="clearfix">
-                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
-                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                        <li> <a href="#"><img src="images/instagram-icon.webp"
+                                    style="max-width: 25px; margin-right: 2px;"></a> </li>
+                        <li> <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -237,15 +244,13 @@
                             <div class="content-box ml_80">
                                 <h2 style="color:var(--theme-color-2);">About Us</h2><br>
                                 <div class="text-box">
-                                    <p style="color:#2b2b2b">We are an international recruitment agency specializing in
-                                        placing Indian nurses and healthcare professionals in Germany. With strong ties
-                                        to German hospitals, clinics, and elder care facilities, we bridge the gap
-                                        between skilled nurses seeking rewarding careers and German employers searching
-                                        for dedicated staff.
-
-                                        We understand that starting a career abroad — or finding qualified staff from
-                                        another country — can be overwhelming. That’s why we’ve made it our mission to
-                                        simplify this process for both sides.
+                                    <p style="color:#2b2b2b">We are a German-based recruitment agency with Indian roots
+                                        specialized in placing Indian nurses and healthcare professionals in Germany.
+                                        With strong ties to German hospitals, clinics, and elderly care facilities, we
+                                        bridge the gap between skilled nurses seeking rewarding careers and German
+                                        employers searching for dedicated staff. We understand that starting a career
+                                        abroad – or finding qualified staff from another country – can be overwhelming.
+                                        That’s why we’ve made it our mission to simplify this process for both sides.
                                 </div>
 
                                 <div class="btn-box"><a href="about.html" class="theme-btn btn-one"><span>Read
@@ -271,8 +276,10 @@
                         <div class="category-block-one">
                             <div class="inner-box">
                                 <h2>For Nurses</h2>
-                                <p>Dreaming of working in Germany? We guide you through every step — from preparing
-                                    documents to securing interviews and starting your new career.</p>
+                                <p>Dreaming of working in Germany? We guide you through every step from preparing
+                                    documents and securing interviews to finding an apartment and assisting you with all
+                                    necessary administration.
+                                </p>
                                 <a href="candidates.html" class="theme-btn btn-one">Find a Job</a>
                                 <figure class="image-box image-hov-one"><img src="images/ns.jpg" alt=""></figure>
                             </div>
@@ -283,7 +290,8 @@
                             <div class="inner-box">
                                 <h2>For Employers </h2>
                                 <p>Looking for qualified, motivated nurses from India? We source, screen, and match
-                                    candidates to fit your needs, making hiring simple and reliable.</p>
+                                    candidates to fit your needs, making your hiring process simple and sustainable.
+                                </p>
                                 <a href="employers.html" class="theme-btn btn-one">Find Nurses</a>
                                 <figure class="image-box image-hov-two"><img src="images/hp.jpg" alt=""></figure>
                             </div>
@@ -371,7 +379,7 @@
                                     <div class="icon-box"><i class="icon-1"></i></div>
                                     <h3>Transparency</h3>
                                     <p>There are no hidden costs or surcharges for female candidates. No advance
-                                        payments, but only when the costs are incurred.</p>
+                                        payments, but only when the costs are occuring.</p>
 
                                 </div>
                             </div>
@@ -402,9 +410,10 @@
                             <div class="chooseus-block-one">
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="icon-39"></i></div>
-                                    <h3>Punjabi Community</h3>
-                                    <p>Due to the high level of co-founders, we offer our candidates optimal access to
-                                        local Punjabi communities.</p>
+                                    <h3>Indian Community</h3>
+                                    <p>Due to the long-term relations of the co-founder to the local Indian community
+                                        newcomers have easy access to peers and culture.
+                                    </p>
 
                                 </div>
                             </div>
@@ -508,8 +517,9 @@
                                 <figure class="footer-logo mb_20"><a href="index.html"><img src="images/logo.jpg"
                                             style="max-height: 80px; padding:15px 30px; border-radius: 15px; background-color: #fff;"
                                             alt=""></a></figure>
-                                <p>We are an international recruitment agency specializing in placing Indian nurses and
-                                    healthcare professionals in Germany. </p>
+                                <p>We are a German-based recruitment agency with Indian roots specialized in placing
+                                    Indian nurses and healthcare professionals in Germany.
+                                </p>
                                 <div class="btn-box"><a href="#" class="theme-btn btn-one"><span>Read More</span></a>
                                 </div>
                             </div>
@@ -542,19 +552,23 @@
                                 <div class="widget-content">
                                     <ul class="links-list clearfix">
                                         <li><a href="#">Address:
-                                                Street no. 1, ABC city, XYZ state, Germany</a></li>
+                                                RMC Nurses GmbH
+                                                Alt Oberliederbach 35
+                                                65835 Liederbach am Taunus
+                                                Germany
+                                            </a></li>
 
                                         <li><a href="#">Mobile:
                                                 +49 999 7865 43232</a></li>
 
                                         <li><a href="#">Email:
-                                                mail@example.com</a></li>
+                                                info@rmcnurses.de
+                                            </a></li>
                                     </ul><br>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="icon-22"></i></a></li>
-                                        <li><a href="#"><i class="icon-23"></i></a></li>
-                                        <li><a href="#"><i class="icon-24"></i></a></li>
-                                    </ul>
+                                    <a href="#"><img src="images/instagram-icon.webp"
+                                            style="max-width: 35px; margin-right: 10px;"></a>
+                                    <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 35px;"></a>
+
                                 </div>
                             </div>
                         </div>
@@ -568,7 +582,7 @@
                 <div class="auto-container">
                     <div class="bottom-inner">
                         <div class="copyright">
-                            <p>Copyright &copy; 2025. All rights reserved.</p>
+                            <p>Copyright &copy; 2026. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
