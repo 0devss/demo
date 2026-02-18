@@ -1787,9 +1787,9 @@ button.ltr {
 
 .team-block-one {
   position: relative;
-  max-width: 300px;
-  margin: 0 auto;
-  border-radius: 20px;
+  margin: 0 auto 30px;
+  border-radius: 10px;
+  max-width: 400px;
   overflow: hidden;
   border: 1px solid #c5c5c5;
 }
