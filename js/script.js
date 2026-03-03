@@ -2,19 +2,7 @@
 	
 	"use strict";
 	
-	//Hide Loading Box (Preloader)
-	function handlePreloader() {
-		if($('.loader-wrap').length){
-			$('.loader-wrap').delay(1000).fadeOut(500);
-		}
-	}
 
-	if ($(".preloader-close").length) {
-        $(".preloader-close").on("click", function(){
-            $('.loader-wrap').delay(200).fadeOut(500);
-        })
-    }
-	
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
 		if($('.main-header').length){
@@ -68,50 +56,6 @@
 		});
 	}
 	
-
-	// Elements Animation
-	if($('.wow').length){
-		var wow = new WOW({
-		mobile:       false
-		});
-		wow.init();
-	}
-
-	//Contact Form Validation
-	if($('#contact-form').length){
-		$('#contact-form').validate({
-			rules: {
-				username: {
-					required: true
-				},
-				email: {
-					required: true,
-					email: true
-				},
-				phone: {
-					required: true
-				},
-				subject: {
-					required: true
-				},
-				message: {
-					required: true
-				}
-			}
-		});
-	}
-
-	//odometer
-	if ($(".odometer").length) {
-	    var odo = $(".odometer");
-	    odo.each(function () {
-	      $(this).appear(function () {
-	        var countNumber = $(this).attr("data-count");
-	        $(this).html(countNumber);
-	      });
-	    });
-	  }
-
 
 	//LightBox / Fancybox
 	if($('.lightbox-image').length) {
@@ -385,86 +329,8 @@
 		});    		
 	}
 
+	
 
-	//Add One Page nav
-	if($('.scroll-nav').length) {
-		$('.scroll-nav').onePageNav();
-	}
-
-	//nice select
-	$(document).ready(function() {
-		$('select:not(.ignore)').niceSelect();
-	  });
-
-
-	//Sortable Masonary with Filters
-	function enableMasonry() {
-		if($('.sortable-masonry').length){
-	
-			var winDow = $(window);
-			// Needed variables
-			var $container=$('.sortable-masonry .items-container');
-			var $filter=$('.filter-btns');
-	
-			$container.isotope({
-				filter:'*',
-				 masonry: {
-					columnWidth : '.masonry-item.small-column'
-				 },
-				animationOptions:{
-					duration:500,
-					easing:'linear'
-				}
-			});
-			
-	
-			// Isotope Filter 
-			$filter.find('li').on('click', function(){
-				var selector = $(this).attr('data-filter');
-	
-				try {
-					$container.isotope({ 
-						filter	: selector,
-						animationOptions: {
-							duration: 500,
-							easing	: 'linear',
-							queue	: false
-						}
-					});
-				} catch(err) {
-	
-				}
-				return false;
-			});
-	
-	
-			winDow.on('resize', function(){
-				var selector = $filter.find('li.active').attr('data-filter');
-
-				$container.isotope({ 
-					filter	: selector,
-					animationOptions: {
-						duration: 500,
-						easing	: 'linear',
-						queue	: false
-					}
-				});
-			});
-	
-	
-			var filterItemA	= $('.filter-btns li');
-	
-			filterItemA.on('click', function(){
-				var $this = $(this);
-				if ( !$this.hasClass('active')) {
-					filterItemA.removeClass('active');
-					$this.addClass('active');
-				}
-			});
-		}
-	}
-	
-	enableMasonry();
 
 
     // Progress Bar
@@ -475,25 +341,6 @@
 			$(el).css('width',percent).addClass('counted');
 		},{accY: -50});
 
-	}
-
-
-	//Search Popup
-	if($('#search-popup').length){
-		
-		//Show Popup
-		$('.search-toggler').on('click', function() {
-			$('#search-popup').addClass('popup-visible');
-		});
-		$(document).keydown(function(e){
-	        if(e.keyCode === 27) {
-	            $('#search-popup').removeClass('popup-visible');
-	        }
-	    });
-		//Hide Popup
-		$('.close-search,.search-popup .overlay-layer').on('click', function() {
-			$('#search-popup').removeClass('popup-visible');
-		});
 	}
 
 
@@ -516,19 +363,6 @@
     }
 
 
-	// page direction
-	function directionswitch() {
-	  	if ($('.page_direction').length) {
-
-	    	$('.direction_switch button').on('click', function() {
-			   $('.boxed_wrapper').toggleClass(function(){
-			      return $(this).is('.rtl, .ltr') ? 'rtl ltr' : 'rtl';
-			  })
-			});
-	  	};
-	}
-
-
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){
 		$(".scroll-to-target").on('click', function() {
@@ -542,92 +376,6 @@
 	}
 
 
-	// ------------------------------- AOS Animation
-    if ($("[data-aos]").length) { 
-        AOS.init({
-        duration: 1000,
-        mirror: true
-      });
-    }
-
-
-	const lenis = new Lenis()
-
-	lenis.on('scroll', () => {
-
-	})
-
-	function raf(time) {
-		lenis.raf(time)
-		requestAnimationFrame(raf)
-	}
-
-	requestAnimationFrame(raf)
-
-
-
-	// Animation gsap 
-  function title_animation() {
-    var tg_var = jQuery('.sec-title-animation');
-    if (!tg_var.length) {
-      return;
-    }
-    const quotes = document.querySelectorAll(".sec-title-animation .title-animation");
-
-    quotes.forEach(quote => {
-
-      //Reset if needed
-      if (quote.animation) {
-        quote.animation.progress(1).kill();
-        quote.split.revert();
-      }
-
-      var getclass = quote.closest('.sec-title-animation').className;
-      var animation = getclass.split('animation-');
-      if (animation[1] == "style4") return
-
-      quote.split = new SplitText(quote, {
-        type: "lines,words,chars",
-        linesClass: "split-line"
-      });
-      gsap.set(quote, {
-        perspective: 400
-      });
-
-      if (animation[1] == "style1") {
-        gsap.set(quote.split.chars, {
-          opacity: 0,
-          y: "90%",
-          rotateX: "-40deg"
-        });
-      }
-      if (animation[1] == "style2") {
-        gsap.set(quote.split.chars, {
-          opacity: 0,
-          x: "50"
-        });
-      }
-      if (animation[1] == "style3") {
-        gsap.set(quote.split.chars, {
-          opacity: 0,
-        });
-      }
-      quote.animation = gsap.to(quote.split.chars, {
-        scrollTrigger: {
-          trigger: quote,
-          start: "top 90%",
-        },
-        x: "0",
-        y: "0",
-        rotateX: "0",
-        opacity: 1,
-        duration: 1,
-        ease: Back.easeOut,
-        stagger: .02
-      });
-    });
-  }
-  ScrollTrigger.addEventListener("refresh", title_animation);
 
 
 
@@ -653,21 +401,6 @@
 	};
 
 
-	
-
-
-	/*	=========================================================================
-	When document is on ready, do
-	========================================================================== */
-
-	jQuery(document).on('ready', function () {
-		(function ($) {
-			// add your functions
-			directionswitch();
-		})(jQuery);
-	});
-
-
 
 	/* ==========================================================================
    When document is Scrollig, do
@@ -678,16 +411,6 @@
 	});
 
 	
-	
-	/* ==========================================================================
-   When document is loaded, do
-   ========================================================================== */
-	
-	$(window).on('load', function() {
-		handlePreloader();
-		enableMasonry();
-		title_animation();
-	});
 
 	
 

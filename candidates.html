@@ -23,31 +23,7 @@
     <link href="css/owl.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/nice-select.css" rel="stylesheet">
-    <link href="css/odometer.css" rel="stylesheet">
-    <link href="css/elpath.css" rel="stylesheet">
-    <link href="css/color.css" id="jssDefault" rel="stylesheet">
-    <link href="css/rtl.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/module-css/header.css" rel="stylesheet">
-    <link href="css/module-css/banner.css" rel="stylesheet">
-    <link href="css/module-css/chooseus.css" rel="stylesheet">
-    <link href="css/module-css/clients.css" rel="stylesheet">
-    <link href="css/module-css/about.css" rel="stylesheet">
-    <link href="css/module-css/category.css" rel="stylesheet">
-    <link href="css/module-css/subscribe.css" rel="stylesheet">
-    <link href="css/module-css/industries.css" rel="stylesheet">
-    <link href="css/module-css/process.css" rel="stylesheet">
-    <link href="css/module-css/welcome.css" rel="stylesheet">
-    <link href="css/module-css/faq.css" rel="stylesheet">
-    <link href="css/module-css/download.css" rel="stylesheet">
-    <link href="css/module-css/testimonial.css" rel="stylesheet">
-
-    <link href="css/module-css/login.css" rel="stylesheet">
-    <link href="css/module-css/news.css" rel="stylesheet">
-    <link href="css/module-css/apps.css" rel="stylesheet">
-    <link href="css/module-css/footer.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
     <style>
@@ -67,6 +43,10 @@
         thead {
             background-color: var(--secondary-color);
             color: white;
+        }
+
+        .table-container th {
+            color: #fff
         }
 
         th,
@@ -481,29 +461,31 @@
                 <div class="col-sm-12 mt_30">
 
                     <h2>Germany vs. Other Top Destinations</h2><br>
-
                     <div class="table-container">
                         <table>
                             <thead>
                                 <tr>
-                                    <th class="benefit-col">Benefit</th>
-                                    <th class="germany-col">Germany</th>
-                                    <th class="dynamic-col">
-                                        <select id="countrySelector" style="color:#fff" onchange="updateComparison()">
-                                            <option value="select">Select Country to Compare</option>
+                                    <th>Category</th>
+                                    <th>Germany</th>
+                                    <th>
+                                        <select
+                                            style="color:#fff;  background-color: #0c406c; font-size: 16px; font-weight: bold; "
+                                            id="countrySelector" onchange="updateComparison()">
+                                            <option value="usa">USA</option>
                                             <option value="canada">Canada</option>
                                             <option value="uk">UK</option>
-                                            <option value="australia">Australia</option>
                                             <option value="nz">New Zealand</option>
                                         </select>
                                     </th>
                                 </tr>
                             </thead>
-                            <tbody id="tableBody">
-                            </tbody>
+                            <tbody id="tableBody"></tbody>
                         </table>
                     </div>
 
+                    <p style="margin-top:20px; font-weight: 500; text-align: center;"> For a detailed analysis of the
+                        costs of living and
+                        disposable income please click <a href="assets/comparison.pdf" target="_blank">here</a>.</p>
                 </div>
             </div>
         </div>
@@ -563,47 +545,93 @@
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label>Name <span>*</span></label>
-                            <input type="text" name="email" required>
+                            <label>First Name* <span>*</span></label>
+                            <input type="text" name="fname" required>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label>Address <span>*</span></label>
-                            <input type="text" name="password" required>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Highest Education <span>*</span></label>
-                            <input type="text" name="email" required>
+                            <label>Last Name <span>*</span></label>
+                            <input type="text" name="lname" required>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label>Work Experience <span>*</span></label>
-                            <input type="text" name="password" required>
+                            <label>Gender <span>*</span></label>
+                            <select name="gender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label>German Skills <span>*</span></label>
-                            <input type="text" name="email" required>
+                            <label>Date of Birth <span>*</span></label>
+                            <input type="text" name="birthdate" required>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>City of Residence <span>*</span></label>
+                            <input type="text" name="city" required>
                         </div>
                     </div>
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                            <label>Inquiry <span>*</span></label>
-                            <input type="text" name="password" required>
+                            <label>Civil Status <span>*</span></label>
+                            <select name="civil" required>
+                                <option value="Single">Single</option>
+                                <option value="In a Relationship">In a Relationship</option>
+                                <option value="Married">Married</option>
+                                <option value="Widowed">Widowed</option>
+                            </select>
                         </div>
                     </div>
 
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                         <div class="form-group">
-                            <label>Upload your CV <span>*</span></label>
+                            <label>Do you have children?<span>*</span></label>
+                            <select name="children" required>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>What is your highest degree in nursing?<span>*</span></label>
+                            <select name="children" required>
+                                <option value="ANM">ANM</option>
+                                <option value="GNM">GNM</option>
+                                <option value="Bachelor of Science in Nursing">Bachelor of Science in Nursing</option>
+                                <option value="Master of Science in Nursing">Master of Science in Nursing</option>
+                                <option value="Post Basic Bsc">Post Basic Bsc</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Do you have a nursing license?<span>*</span></label>
+                            <select name="children" required>
+                                <option value="Yes">Yes</option>
+                                <option value="No, I'm waiting for it">No, I'm waiting for it</option>
+                                <option value="No, and I won't recieve it">No, and I won't recieve it</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label>Upload Documents <span>*</span></label>
                             <input type="file" name="file" required>
                         </div>
                     </div>
@@ -742,21 +770,10 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.js"></script>
-    <script src="js/wow.js"></script>
     <script src="js/jquery.fancybox.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/isotope.js"></script>
     <script src="js/parallax-scroll.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/scrolltop.min.js"></script>
-    <script src="js/gsap.js"></script>
-    <script src="js/ScrollTrigger.js"></script>
-    <script src="js/SplitText.js"></script>
-    <script src="js/language.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="js/lenis.min.js"></script>
-    <script src="js/odometer.js"></script>
-    <script src="js/jquery.lettering.min.js"></script>
     <script src="js/jquery.circleType.js"></script>
 
     <!-- main-js -->
@@ -764,96 +781,119 @@
 
     <script>
         const data = {
-            select: {
-                salary: "",
-                cost: "",
-                balance: "",
-                leave: "",
-                healthcare: "",
-                pr: "",
-                family: "",
-                language: "",
-                recognition: "",
-                visa: " "
+            germany: {
+                salary: "37,000 - 58,000 USD/year depending on experience and state",
+                taxes: "30-35% (includes healthcare, pension, unemployment, long-term care)",
+                cost: "58-69",
+                disposable: "Moderate but stable, able to save money",
+                leave: "26-30 days/year",
+                hours: "38-40 hours/week",
+                healthcare: "Universal statutory health insurance (or private), high coverage",
+                childcare: "Public supported day care",
+                visa: "Skilled worker route after German recognition, high demand",
+                citizenship: "Permanent residence after 4-5 years, passport after 5 years",
+                family: "Family can join once income & housing requirements are met",
+                language: "German B1 minimum, B2 preferred",
+                worklife: "Strong protection of working-time laws, paid leave & parental leave"
             },
+
+            usa: {
+                salary: "60,000 - 100,000 USD/year (varies by state and city)",
+                taxes: "25-30% (no universal social coverage)",
+                cost: "65-69",
+                disposable: "Moderate to low, high rent & healthcare costs",
+                leave: "10-15 days/year",
+                hours: "36-40 hours/week, often 10-12 hour shifts",
+                healthcare: "No universal coverage, private or employer plans",
+                childcare: "Very expensive and private paid",
+                visa: "Complex employment-based visa process",
+                citizenship: "Green card may take years, passport ~5 years after PR",
+                family: "Family immigration lengthy and expensive",
+                language: "English required + NCLEX + state exam",
+                worklife: "High pay but heavier workload, burnout risk"
+            },
+
             canada: {
-                salary: "CAD $60,000 – $80,000",
-                cost: "High (varies by city)",
-                balance: "Good",
-                leave: "2–4 weeks",
-                healthcare: "Yes (public + private mix)",
-                pr: "Yes (through Express Entry)",
-                family: "Child benefit, healthcare",
-                language: "IELTS/CLB 7+",
-                recognition: "Yes (with registration)",
-                visa: "Yes (skilled worker programs)"
+                salary: "45,000 - 60,000 USD/year",
+                taxes: "25-30% (includes pension and EI)",
+                cost: "59-70",
+                disposable: "Balanced, but lower in big cities due to high rent",
+                leave: "10-20 days/year",
+                hours: "36-40 hours/week, 12-hour rotating shifts",
+                healthcare: "Public medicare provides good basic coverage",
+                childcare: "Mix of public and private, often costly in cities",
+                visa: "Express Entry (point-based) + provincial licensing required",
+                citizenship: "Between 3-6 years",
+                family: "Family can join once permanent residency obtained",
+                language: "English + provincial registration (French in some provinces)",
+                worklife: "Generally good but high stress due to staff shortages"
             },
-            uk: {
-                salary: "£27,000 – £40,000",
-                cost: "High (especially London)",
-                balance: "Average",
-                leave: "28 days",
-                healthcare: "Yes (NHS)",
-                pr: "Yes (work to settlement)",
-                family: "Child benefit, NHS access",
-                language: "IELTS 7.0",
-                recognition: "Yes (NMC registration)",
-                visa: "Yes (Health and Care visa)"
-            },
-            australia: {
-                salary: "AUD $65,000 – $85,000",
-                cost: "High (Sydney/Melbourne)",
-                balance: "Good",
-                leave: "20 days + holidays",
-                healthcare: "Yes (Medicare)",
-                pr: "Yes (skilled migration)",
-                family: "Childcare subsidies, Medicare",
-                language: "OET/IELTS",
-                recognition: "Yes (AHPRA)",
-                visa: "Yes (employer sponsorship)"
-            },
+
             nz: {
-                salary: "NZD $55,000 – $75,000",
-                cost: "Moderate to High",
-                balance: "Excellent",
-                leave: "20 days + public holidays",
-                healthcare: "Yes (public system)",
-                pr: "Yes (resident visa options)",
-                family: "Free education, healthcare",
-                language: "OET/IELTS",
-                recognition: "Yes (NCNZ)",
-                visa: "Yes (skilled shortage list)"
+                salary: "45,000 - 55,000 USD/year",
+                taxes: "25-30% (some social coverage included)",
+                cost: "55-65",
+                disposable: "Balanced but low in big cities, expensive groceries",
+                leave: "20 days/year",
+                hours: "40 hours/week",
+                healthcare: "Universal health system",
+                childcare: "Limited places, partly high fees",
+                visa: "Work-to-residence visa for nurses, high demand",
+                citizenship: "After 5-6 years residence-to-citizenship",
+                family: "Family can join once housing & income requirements are met",
+                language: "English required + OET/IELTS",
+                worklife: "Depends strongly on employer and region"
+            },
+
+            uk: {
+                salary: "50,000 - 55,000 USD/year",
+                taxes: "25-30% (some social coverage included)",
+                cost: "59-68",
+                disposable: "Low in cities like London due to high rent and inflation",
+                leave: "27 days/year",
+                hours: "37.5 hours/week",
+                healthcare: "NHS provides universal healthcare",
+                childcare: "Very high fees compared to nurse salary",
+                visa: "Skilled worker visa with NMC registration",
+                citizenship: "After 5 years → Indefinite Leave → Citizenship later",
+                family: "Family can join if income & visa rules met (high fees)",
+                language: "Proof via OET/IELTS",
+                worklife: "Chronic understaffing affects morale and work-life balance"
             }
         };
 
         const benefits = [
-            { key: 'salary', label: 'Average Nurse Salary', ger: '€38,000 – €50,000' },
-            { key: 'cost', label: 'Cost of Living', ger: 'Moderate' },
-            { key: 'balance', label: 'Work-Life Balance', ger: 'Excellent (35–40 hrs/week)' },
-            { key: 'leave', label: 'Paid Annual Leave', ger: '20–30 days' },
-            { key: 'healthcare', label: 'Public Healthcare', ger: 'Yes (universal)' },
-            { key: 'pr', label: 'Pathway to PR', ger: 'Available after 3–5 years' },
-            { key: 'family', label: 'Family Benefits', ger: 'Child allowance, parental leave' },
-            { key: 'language', label: 'Language Requirement', ger: 'B1/B2 German' },
-            { key: 'recognition', label: 'Recognition of Qual.', ger: 'Yes (with licensing)' },
-            { key: 'visa', label: 'Visa Sponsorship', ger: 'Yes (nursing shortage)' }
+            { key: 'salary', label: 'Gross Salary' },
+            { key: 'taxes', label: 'Taxes' },
+            { key: 'cost', label: 'Cost of Living Index' },
+            { key: 'disposable', label: 'Disposable Income' },
+            { key: 'leave', label: 'Vacation (excl. public holidays)' },
+            { key: 'hours', label: 'Work Hours per Week' },
+            { key: 'healthcare', label: 'Health Insurance' },
+            { key: 'childcare', label: 'Childcare' },
+            { key: 'visa', label: 'Immigration Route' },
+            { key: 'citizenship', label: 'Citizenship Pathway' },
+            { key: 'family', label: 'Family Reunification' },
+            { key: 'language', label: 'Language Requirements' },
+            { key: 'worklife', label: 'Work-Life Balance' }
         ];
 
         function updateComparison() {
             const selected = document.getElementById('countrySelector').value;
-            const countryData = data[selected];
+            const selectedCountry = data[selected];
+            const germany = data.germany;
             const tbody = document.getElementById('tableBody');
 
             tbody.innerHTML = benefits.map(benefit => `
                 <tr>
                     <td class="benefit-col">${benefit.label}</td>
-                    <td class="germany-col">${benefit.ger}</td>
-                    <td class="dynamic-col">${countryData[benefit.key]}</td>
+                    <td class="germany-col">${germany[benefit.key]}</td>
+                    <td class="dynamic-col">${selectedCountry[benefit.key]}</td>
                 </tr>
             `).join('');
         }
 
-        // Initialize table on load
+        // Initialize on load
         updateComparison();
     </script>
 
