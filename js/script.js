@@ -411,7 +411,46 @@
 	});
 
 	
+ 
+        const btn = document.getElementById('pickerBtn');
+        const dropdown = document.getElementById('ln-dropdown');
 
+        btn.addEventListener('click', () => {
+            const isOpen = dropdown.classList.toggle('open');
+            btn.classList.toggle('open', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!btn.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.remove('open');
+                btn.classList.remove('open');
+                btn.setAttribute('aria-expanded', false);
+            }
+        });
+   
+
+
+
+   
+        document.addEventListener("DOMContentLoaded", function () {
+
+            let page = window.location.pathname.split("/").pop() || "index.html";
+
+            document.querySelectorAll('[data-lang]').forEach(function (link) {
+
+                let lang = link.getAttribute("data-lang");
+
+                if (lang === "en") {
+                    link.href = page;
+                } else {
+                    link.href = lang + "/" + page;
+                }
+
+            });
+
+        });
+    
 	
 
 })(window.jQuery);

@@ -17,20 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
 
-    <!-- Stylesheets -->
-    <link href="css/font-awesome-all.css" rel="stylesheet">
-    <link href="css/flaticon.css" rel="stylesheet">
-    <link href="css/owl.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/nice-select.css" rel="stylesheet">
-    <link href="css/odometer.css" rel="stylesheet">
-    <link href="css/elpath.css" rel="stylesheet">
-    <link href="css/color.css" id="jssDefault" rel="stylesheet">
-    <link href="css/rtl.css" rel="stylesheet">
-    <link href="css/single.css" rel="stylesheet">
-    <link href="css/responsive.css" rel="stylesheet">
+        <?php include 'inc/styles.php'; ?>
 
 </head>
 
@@ -41,136 +28,8 @@
 
     <div class="boxed_wrapper ltr">
 
+    <?php include 'inc/nav.php'; ?>
 
-        <!-- main header -->
-        <header class="main-header header-style-three">
-            <!-- header-top -->
-            <div class="header-top">
-                <div class="container">
-                    <div class="top-inner">
-                        <div class="left-column">
-                            <ul class="info">
-                                <li>
-                                    <img src="images/icons/icon-6.png" alt="">
-                                    <a href="tel:999">+49 987 6666 543</a>
-                                </li>
-                                <li>
-                                    <img src="images/icons/icon-7.png" alt="">
-                                    <a href="mailto:info@rmcnurses.de">info@rmcnurses.de</a>
-                                </li>
-                                <a href="#"><img src="images/instagram-icon.webp"
-                                        style="max-width: 25px; margin-right: 10px;"></a>
-                                <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a>
-                            </ul>
-                        </div>
-                        <div class="right-column">
-                            <div class="ln-picker-wrapper">
-                                <button class="ln-picker-btn" id="pickerBtn" aria-haspopup="listbox"
-                                    aria-expanded="false">
-                                    <span class="globe-icon">🌐</span>
-                                    <span class="btn-label" id="btnLabel">Language</span>
-                                    <span class="ln-chevron"></span>
-                                </button>
-
-                                <div class="ln-dropdown" id="ln-dropdown" role="listbox">
-                                    <a href="#" hreflang="en" data-lang="en">
-                                        <span class="flag"> <img src="images/en.png"> </span>
-                                        <span class="lang-name">English</span>
-                                    </a>
-                                    <a href="#" hreflang="de" data-lang="de">
-                                        <span class="flag"> <img src="images/de.png"> </span>
-                                        <span class="lang-name">Deutsch</span>
-                                    </a>
-                                    <a href="#" hreflang="pa-IN" data-lang="pa-IN">
-                                        <span class="flag"> <img src="images/in.png"> </span>
-                                        <span class="lang-name">ਪੰਜਾਬੀ</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- header-lower -->
-            <div class="header-lower">
-                <div class="container">
-                    <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="images/logo.jpg" alt=""
-                                    style="max-height: 90px; padding:6px 0"></a></figure>
-                        <div class="menu-area">
-                            <!--Mobile Navigation Toggler-->
-                            <div class="mobile-nav-toggler">
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                                <i class="icon-bar"></i>
-                            </div>
-                            <nav class="main-menu navbar-expand-md navbar-light clearfix">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix">
-                                        <li><a href="#">Home</a></li>
-                                        <li class="dropdown"><a href="javascript:void(0)">About Us</a>
-                                            <ul>
-                                                <li><a href="about.html">About Us</a>
-                                                <li><a href="sgl-college.html">SGL Nursing</a>
-                                                <li><a href="sgl-hospital.html">SGL Hospital</a>
-                                            </ul>
-
-                                        </li>
-                                        <li><a href="candidates.html">For Candidates</a></li>
-                                        <li><a href="employers.html">For Employers</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!--sticky Header-->
-            <div class="sticky-header">
-                <div class="container">
-                    <div class="outer-box">
-                        <figure class="logo-box"><a href="index.html"><img src="images/logo.jpg" alt=""
-                                    style="max-height: 90px; padding:6px 0"></a></figure>
-                        <div class="menu-area">
-                            <nav class="main-menu clearfix">
-                                <!--Keep This Empty / Menu will come through Javascript-->
-                            </nav>
-                        </div>
-                        <div class="menu-right-content">
-                            <div class="btn-box"><a href="index.html" class="theme-btn btn-one">Consultation</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- main-header end -->
-
-
-        <!-- Mobile Menu  -->
-        <div class="mobile-menu">
-            <div class="menu-backdrop"></div>
-            <div class="close-btn"><i class="fas fa-times"></i></div>
-            <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="images/logo.jpg" alt="" title=""
-                            style="max-height: 90px; padding:6px 0"></a></div>
-                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                </div>
-
-                <div class="social-links">
-                    <ul class="clearfix">
-                        <li> <a href="#"><img src="images/instagram-icon.webp"
-                                    style="max-width: 25px; margin-right: 2px;"></a> </li>
-                        <li> <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <!-- End Mobile Menu -->
 
 
         <!-- banner-section -->
@@ -188,23 +47,12 @@
                             <h2>Connecting Qualified Nurses with <span>Opportunities in Germany</span></h2>
                             <!-- <p>Implementing a robust employee referral program can be a creative and effective way to recruit at scale.</p> -->
                             <div class="btn-box">
-                                <a href="index.html" class="theme-btn btn-one mr_20"><span>Find Works</span></a>
-                                <a href="index.html" class="theme-btn banner-btn"><span>Hire Talents Now</span></a>
+                                <a href="candidates.php" class="theme-btn btn-one mr_20"><span>Find Works</span></a>
+                                <a href="employers.php" class="theme-btn banner-btn"><span>Hire Talents Now</span></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 image-column">
-                        <!--  <div class="image-inner">
-                            <div class="icon-logo"><img src="images/icons/logo-icon-1.png" alt=""></div>
-                            <div class="image-box mr_15">
-                                <figure class="image image-1 mb_15"><img src="images/banner/banner-img-1.jpg" alt=""></figure>
-                                <figure class="image image-2"><img src="images/banner/banner-img-2.jpg" alt=""></figure>
-                            </div>
-                            <div class="image-box pt_55">
-                                <figure class="image image-3 mb_15"><img src="images/banner/banner-img-3.jpg" alt=""></figure>
-                                <figure class="image image-4"><img src="images/banner/banner-img-4.jpg" alt=""></figure>
-                            </div>
-                        </div> -->
                         <div class="image-inner">
                             <img src="images/nurse.webp" alt="">
                         </div>
@@ -247,7 +95,7 @@
                                         That’s why we’ve made it our mission to simplify this process for both sides.
                                 </div>
 
-                                <div class="btn-box"><a href="about.html" class="theme-btn btn-one"><span>Read
+                                <div class="btn-box"><a href="about.php" class="theme-btn btn-one"><span>Read
                                             More</span></a></div>
                             </div>
                         </div>
@@ -274,7 +122,7 @@
                                     documents and securing interviews to finding an apartment and assisting you with all
                                     necessary administration.
                                 </p>
-                                <a href="candidates.html" class="theme-btn btn-one">Find a Job</a>
+                                <a href="candidates.php" class="theme-btn btn-one">Find a Job</a>
                                 <figure class="image-box image-hov-one"><img src="images/ns.jpg" alt=""></figure>
                             </div>
                         </div>
@@ -286,7 +134,7 @@
                                 <p>Looking for qualified, motivated nurses from India? We source, screen, and match
                                     candidates to fit your needs, making your hiring process simple and sustainable.
                                 </p>
-                                <a href="employers.html" class="theme-btn btn-one">Find Nurses</a>
+                                <a href="employers.php" class="theme-btn btn-one">Find Nurses</a>
                                 <figure class="image-box image-hov-two"><img src="images/hp.jpg" alt=""></figure>
                             </div>
                         </div>
@@ -456,93 +304,7 @@
 
 
 
-        <!-- main-footer -->
-        <footer class="main-footer light-footer">
-            <div class="widget-section p_relative pt_80 pb_100">
-                <div class="auto-container">
-                    <div class="row clearfix">
-
-                        <div class="col-sm-4 footer-column">
-                            <div class="footer-widget logo-widget mr_30">
-                                <figure class="footer-logo mb_20"><a href="index.html"><img src="images/logo.jpg"
-                                            style="max-height: 80px; padding:15px 30px; border-radius: 15px; background-color: #fff;"
-                                            alt=""></a></figure>
-                                <p>We are a German-based recruitment agency with Indian roots specialized in placing
-                                    Indian nurses and healthcare professionals in Germany.
-                                </p>
-                                <div class="btn-box"><a href="#" class="theme-btn btn-one"><span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-sm-3 footer-column">
-                            <div class="footer-widget links-widget">
-                                <div class="widget-title">
-                                    <h4>Links</h4>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="links-list clearfix">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="candidates.html">For Candidates</a></li>
-                                        <li><a href="employers.html">For Employers</a></li>
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-5 footer-column">
-                            <div class="footer-widget links-widget">
-                                <div class="widget-title">
-                                    <h4>Contact Info</h4>
-                                </div>
-                                <div class="widget-content">
-                                    <ul class="links-list clearfix">
-                                        <li><a href="#">Address:
-                                                RMC Nurses GmbH
-                                                Alt Oberliederbach 35
-                                                65835 Liederbach am Taunus
-                                                Germany
-                                            </a></li>
-
-                                        <li><a href="#">Mobile:
-                                                +49 999 7865 43232</a></li>
-
-                                        <li><a href="#">Email:
-                                                info@rmcnurses.de
-                                            </a></li>
-                                    </ul><br>
-                                    <a href="#"><img src="images/instagram-icon.webp"
-                                            style="max-width: 35px; margin-right: 10px;"></a>
-                                    <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 35px;"></a>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="auto-container">
-                    <div class="bottom-inner">
-                        <div class="copyright">
-                            <p>Copyright &copy; <span id="year"></span>. All rights reserved.</p>
-
-                            <script>
-                                document.getElementById("year").textContent = new Date().getFullYear();
-                            </script>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- main-footer end -->
+        <?php include 'inc/footer.php'; ?>
 
 
 
@@ -556,29 +318,7 @@
     </div>
 
 
-    <!-- jequery plugins -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.js"></script>
-    <script src="js/wow.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
-    <script src="js/appear.js"></script>
-    <script src="js/isotope.js"></script>
-    <script src="js/parallax-scroll.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/scrolltop.min.js"></script>
-    <script src="js/gsap.js"></script>
-    <script src="js/ScrollTrigger.js"></script>
-    <script src="js/SplitText.js"></script>
-    <script src="js/language.js"></script>
-    <script src="js/jquery-ui.js"></script>
-    <script src="js/lenis.min.js"></script>
-    <script src="js/odometer.js"></script>
-    <script src="js/jquery.lettering.min.js"></script>
-    <script src="js/jquery.circleType.js"></script>
-
-    <!-- main-js -->
-    <script src="js/script.js"></script>
+    <?php include 'inc/scripts.php'; ?>
 
 </body><!-- End of .page_wrapper -->
 

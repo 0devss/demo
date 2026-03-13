@@ -58,9 +58,29 @@
                             </ul>
                         </div>
                         <div class="right-column">
-                            <div class="gtranslate_wrapper"></div>
-                            <script>window.gtranslateSettings = { "default_language": "en", "native_language_names": true, "languages": ["en", "de", "pa"], "wrapper_selector": ".gtranslate_wrapper", "flag_size": 24, "switcher_horizontal_position": "inline" }</script>
-                            <script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
+                            <div class="ln-picker-wrapper">
+                                <button class="ln-picker-btn" id="pickerBtn" aria-haspopup="listbox"
+                                    aria-expanded="false">
+                                    <span class="globe-icon">🌐</span>
+                                    <span class="btn-label" id="btnLabel">Language</span>
+                                    <span class="ln-chevron"></span>
+                                </button>
+
+                                <div class="ln-dropdown" id="ln-dropdown" role="listbox">
+                                    <a href="#" hreflang="en" data-lang="en">
+                                        <span class="flag"> <img src="images/en.png"> </span>
+                                        <span class="lang-name">English</span>
+                                    </a>
+                                    <a href="#" hreflang="de" data-lang="de">
+                                        <span class="flag"> <img src="images/de.png"> </span>
+                                        <span class="lang-name">Deutsch</span>
+                                    </a>
+                                    <a href="#" hreflang="pa-IN" data-lang="pa-IN">
+                                        <span class="flag"> <img src="images/in.png"> </span>
+                                        <span class="lang-name">ਪੰਜਾਬੀ</span>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -456,6 +476,9 @@
         </div>
 
     </div>
+
+
+
 
 
     <!-- jequery plugins -->
