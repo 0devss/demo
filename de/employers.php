@@ -8,7 +8,7 @@
 
     <title>Demo</title>
 
-
+<base href="../">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
 
-        <?php include 'inc/styles.php'; ?>
+        <?php include '../inc/styles.php'; ?>
 
 </head>
 
@@ -28,7 +28,7 @@
 
     <div class="boxed_wrapper ltr">
 
-    <?php include 'inc/nav.php'; ?>
+    <?php include '../inc/de-nav.php'; ?>
 
 
         <section class="top-sec centred" style="    background: url(images/topbg.jpg);
@@ -36,7 +36,7 @@
         padding: 150px 0;">
             <div class="container">
                 <div class="row clearfix">
-                    <h2 style="color:#0c406c; font-size:42px; font-weight:bold; text-transform:uppercase"> Employers
+                    <h2 style="color:#0c406c; font-size:42px; font-weight:bold; text-transform:uppercase"> Arbeitgeber
                     </h2>
                 </div>
             </div>
@@ -50,42 +50,43 @@
                 <div class="row clearfix">
 
                     <div class="col-sm-12">
-                        <h2 style="text-align:center;">Why Work with RMC?</h2><br><br>
+                        <h2 style="text-align:center;">Warum mit RMC zusammenarbeiten?</h2><br><br>
                     </div>
 
                     <div class="col-sm-6 pb_30">
-                        <div class="emplyrs">
-                            <h4>✅ Transparent Process</h4>
-                            <p style="color:#1b1b1b">We believe in honesty at every step. From candidate screening to
-                                documentation, you receive clear, timely updates so you always know exactly where things
-                                stand. </p>
+                        <div
+                            style="border-radius: 10px; padding:20px; background: linear-gradient(45deg, #cef4ff, transparent);">
+                            <h4 style="color:var(--secondary-color); margin-bottom: 10px;">✅ Transparenter Prozess </h4>
+<p>Wir setzen in jedem Schritt auf Ehrlichkeit. Von der Kandidatenauswahl bis zur Dokumentation erhalten Sie klare und zeitnahe Updates, sodass Sie stets genau wissen, wie der aktuelle Stand ist.</p>
+
                         </div>
                     </div>
 
                     <div class="col-sm-6 pb_30">
-                       <div class="emplyrs">
-                            <h4>✅ Top Universities in India  </h4>
-                            <p style="color:#1b1b1b">We partner with leading nursing institutions across India to ensure
-                                access to highly qualified, well-trained professionals who are ready to contribute from
-                                day one. </p>
+                        <div
+                            style="border-radius: 10px; padding:20px; background: linear-gradient(45deg, #cef4ff, transparent);">
+                            
+<h4 style="color:var(--secondary-color); margin-bottom: 10px;"> ✅ Renommierte Universitäten in Indien </h4>
+<p>Wir kooperieren mit führenden Pflegebildungseinrichtungen in ganz Indien, um Ihnen Zugang zu hochqualifizierten und bestens ausgebildeten Fachkräften zu sichern – bereit, vom ersten Tag an ihren Beitrag zu leisten.</p>
+
+
+                    </div>
+</div>
+                    <div class="col-sm-6 pb_30">
+                        <div
+                            style="border-radius: 10px; padding:20px; background: linear-gradient(45deg, #cef4ff, transparent);">
+                           <h4 style="color:var(--secondary-color); margin-bottom: 10px;"> ✅ Nachhaltige Vermittlung & Wachstum </h4>
+<p>Unser einzigartiges Vermittlungsnetzwerk fördert langfristige und qualitätsorientierte Stellenbesetzungen. Die über unser Programm vermittelten Pflegekräfte sind hoch motiviert, Spitzenleistungen zu erbringen und sich optimal zu integrieren – was die Mitarbeiterfluktuation reduziert.</p>
+
+
                         </div>
                     </div>
 
                     <div class="col-sm-6 pb_30">
-                       <div class="emplyrs">
-                            <h4>✅ Sustainable Referrals &   Growth</h4>
-                            <p style="color:#1b1b1b">Our unique referral network encourages long-term, quality-focused
-                                placements. Nurses referred through our program are motivated to excel and integrate,
-                                reducing turnover. </p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 pb_30">
-                        <div class="emplyrs">
-                            <h4>✅ Direct Hospital Connections   </h4>
-                            <p style="color:#1b1b1b">We maintain close ties with German hospitals, ensuring candidates
-                                understand workplace expectations and have opportunities to build hands-on skills
-                                aligned with your needs. </p>
+                        <div
+                            style="border-radius: 10px; padding:20px; background: linear-gradient(45deg, #cef4ff, transparent);">
+                            <h4 style="color:var(--secondary-color); margin-bottom: 10px;"> ✅ Direkte Verbindungen zu Krankenhäusern </h4>
+<p>Wir pflegen enge Beziehungen zu deutschen Krankenhäusern. So stellen wir sicher, dass die Kandidaten die Erwartungen am Arbeitsplatz genau kennen und die Möglichkeit erhalten, praktische Kompetenzen zu erwerben, die exakt auf Ihre Anforderungen zugeschnitten sind.</p>
                         </div>
                     </div>
 
@@ -102,37 +103,39 @@
                 <div class="row clearfix">
                     <div class="col-md-12">
                         <div class="sec-title pb_35 sec-title-animation animation-style2">
-                            <span class="sub-title mb_10 title-animation">The Process</span>
-                            <h2 class="title-animation">How does the process with RMC work !</h2>
+                            <span class="sub-title mb_10 title-animation">Der Prozess</span>
+                            <h2 class="title-animation">Wie läuft der Prozess mit RMC ab!</h2>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="content_block_two">
-                            <div class="content-box mr_100">
+<div class="col-md-8">
+<div class="content_block_two">
+    <div class="content-box mr_100">
 
-                                <div class="inner-box">
-                                    <div class="single-item">
-                                        <span class="count-text">1</span>
-                                        <h3>Sourcing & Screening </h3>
-                                        <p>Through partnerships with top nursing colleges and a robust vetting process,
-                                            we identify qualified, motivated candidates.</p>
-                                    </div>
-                                    <div class="single-item">
-                                        <span class="count-text">2</span>
-                                        <h3>Placement & Onboarding </h3>
-                                        <p>We coordinate all paperwork, help manage relocation, and stay involved
-                                            through the onboarding phase to ensure a smooth start.</p>
-                                    </div>
-                                    <div class="single-item">
-                                        <span class="count-text">3</span>
-                                        <h3>Ongoing Support </h3>
-                                        <p>Our commitment continues after placement — we stay connected to resolve any
-                                            concerns and to help both employers and nurses thrive long term.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="inner-box">
+
+            <div class="single-item">
+                <span class="count-text">1</span>
+                <h3>Sourcing & Screening </h3>
+                <p>Durch Partnerschaften mit führenden Pflegeschulen und einen gründlichen Auswahlprozess identifizieren wir qualifizierte und motivierte Kandidaten.</p>
+            </div>
+
+            <div class="single-item">
+                <span class="count-text">2</span>
+                <h3>Vermittlung & Onboarding </h3>
+                <p>Wir koordinieren sämtliche Formalitäten, unterstützen bei der Organisation des Umzugs und begleiten den gesamten Onboarding-Prozess, um einen reibungslosen Start zu gewährleisten.</p>
+            </div>
+
+            <div class="single-item">
+                <span class="count-text">3</span>
+                <h3>Fortlaufende Betreuung </h3>
+                <p>Unser Engagement endet nicht mit der Vermittlung: Wir bleiben weiterhin in Kontakt, um etwaige Anliegen zu klären und sowohl Arbeitgebern als auch Pflegekräften langfristig zum Erfolg zu verhelfen.</p>
+            </div>
+ 
+
+        </div>
+    </div>
+</div>
+</div>
 
                     <div class="col-md-4">
                         <img src="images/abt.jpg" class="mt_30" style="border-radius:10px">
@@ -148,39 +151,39 @@
         <section class="sign-section pt_60 pb_90">
             <div class="pattern-layer" style="background-image: url(images/shape/shape-25.png);"></div>
             <div class="auto-container">
-                <h2 style="text-align:center;">Want to Find a Right Candidate? <br>Reach out to us </h2><br>
+                <h2 style="text-align:center;">Möchten Sie den richtigen Kandidaten finden? <br>Kontaktieren Sie uns</h2><br>
                 <div class="form-inner">
                     <form class="row clearfix" method="post" action="login.php">
 
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label>Your Name <span>*</span></label>
+                                <label>Ihr Name<span>*</span></label>
                                 <input type="text" name="email" required>
                             </div>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label>Your Email <span>*</span></label>
+                                <label>Ihre E-Mail-Adresse<span>*</span></label>
                                 <input type="text" name="password" required>
                             </div>
                         </div>
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label>Preferences in Work Experience <span>*</span></label>
+                                <label>Präferenzen bezüglich Berufserfahrung  <span>*</span></label>
                                 <input type="text" name="email" required>
                             </div>
                         </div>
 
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label>German Levels <span>*</span></label>
+                                <label>Deutschkenntnisse <span>*</span></label>
                                 <input type="text" name="password" required>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group">
-                                <label>When is Candidate Required? <span>*</span></label>
+                                <label>Wann wird der Kandidat benötigt?  <span>*</span></label>
                                 <input type="text" name="email" required>
                             </div>
                         </div>
@@ -188,7 +191,7 @@
 
 
                         <div class="form-group message-btn">
-                            <button type="submit" class="theme-btn btn-one">Submit</button>
+                            <button type="submit" class="theme-btn btn-one">Absenden</button>
                         </div>
 
 
@@ -208,7 +211,7 @@
                         <div class="shape-2" style="background-image: url(images/shape/shape-9.png);"></div>
                     </div>
                     <div class="text-box">
-                        <h2> <span>Sign up</span> for our Newsletter</h2>
+                        <h2>   Melden Sie sich für unseren <span> Newsletter </span> an.</h2>
                     </div>
                     <div class="form-inner">
                         <form method="post" action="contact.php">
@@ -224,7 +227,7 @@
  
 
 
-        <?php include 'inc/footer.php'; ?>
+        <?php include '../inc/de-footer.php'; ?>
 
 
 
@@ -238,7 +241,7 @@
     </div>
 
 
-    <?php include 'inc/scripts.php'; ?>
+    <?php include '../inc/scripts.php'; ?>
 
 </body><!-- End of .page_wrapper -->
 

@@ -23,11 +23,11 @@
                             </ul>
                         </div>
                         <div class="right-column">
-                           <div class="ln-picker-wrapper">
+                            <div class="ln-picker-wrapper">
                                 <button class="ln-picker-btn" id="pickerBtn" aria-haspopup="listbox"
                                     aria-expanded="false">
                                     <span class="globe-icon">🌐</span>
-                                    <span class="btn-label" id="btnLabel">Language</span>
+                                    <span class="btn-label" id="btnLabel">ਭਾਸ਼ਾ</span>
                                     <span class="ln-chevron"></span>
                                 </button>
 
@@ -54,7 +54,7 @@
             <div class="header-lower">
                 <div class="container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.php"><img src="images/logo.jpg" alt=""
+                        <figure class="logo-box"><a href="pa-IN/index.php"><img src="images/logo.jpg" alt=""
                                     style="max-height: 90px; padding:6px 0"></a></figure>
                         <div class="menu-area">
                             <!--Mobile Navigation Toggler-->
@@ -65,21 +65,20 @@
                             </div>
                             <nav class="main-menu navbar-expand-md navbar-light clearfix">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix">
-                                        <li><a href="index.php">Home</a></li>
-                                        <li class="dropdown"><a href="javascript:void(0)">About Us</a>
-                                            <ul>
-                                                <li><a href="about.php">About Us</a>
-                                                <li><a href="sgl-college.php">SGL Nursing</a>
-                                                <li><a href="sgl-hospital.php">SGL Hospital</a>
-                                            </ul>
-
-                                        </li>
-                                        <li><a href="candidates.php">For Candidates</a></li>
-                                        <li><a href="employers.php">For Employers</a></li>
-                                        <li><a href="blog.php">Blog</a></li>
-                                        <li><a href="contact.php">Contact Us</a></li>
-                                    </ul>
+                                   <ul class="navigation clearfix">
+    <li><a href="pa-IN/index.php">ਮੁੱਖ ਪੰਨਾ</a></li>
+    <li class="dropdown"><a href="javascript:void(0)">ਸਾਡੇ ਬਾਰੇ</a>
+        <ul>
+            <li><a href="pa-IN/about.php">ਸਾਡੇ ਬਾਰੇ</a></li>
+            <li><a href="pa-IN/sgl-college.php">SGL ਨਰਸਿੰਗ</a></li>
+            <li><a href="pa-IN/sgl-hospital.php">SGL ਹਸਪਤਾਲ</a></li>
+        </ul>
+    </li>
+    <li><a href="pa-IN/candidates.php">ਉਮੀਦਵਾਰਾਂ ਲਈ</a></li>
+    <li><a href="pa-IN/employers.php">ਨਿਯੋਗਕਰਤਾਵਾਂ ਲਈ</a></li>
+    <li><a href="pa-IN/blog.php">ਬਲੌਗ</a></li>
+    <li><a href="pa-IN/contact.php">ਸੰਪਰਕ ਕਰੋ</a></li>
+</ul>
                                 </div>
                             </nav>
                         </div>
@@ -92,7 +91,7 @@
             <div class="sticky-header">
                 <div class="container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.php"><img src="images/logo.jpg" alt=""
+                        <figure class="logo-box"><a href="pa-IN/index.php"><img src="images/logo.jpg" alt=""
                                     style="max-height: 90px; padding:6px 0"></a></figure>
                         <div class="menu-area">
                             <nav class="main-menu clearfix">
@@ -114,7 +113,7 @@
             <div class="menu-backdrop"></div>
             <div class="close-btn"><i class="fas fa-times"></i></div>
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.php"><img src="images/logo.jpg" alt="" title=""
+                <div class="nav-logo"><a href="pa-IN/index.php"><img src="images/logo.jpg" alt="" title=""
                             style="max-height: 90px; padding:6px 0"></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>

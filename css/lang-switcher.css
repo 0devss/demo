@@ -1,0 +1,135 @@
+/* =============================================
+   Language Switcher Styles
+   Add to your main stylesheet or paste into <style>
+   ============================================= */
+
+/* Wrapper — position relative so dropdown anchors to it */
+.ls-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  z-index: 1000;
+}
+
+/* Trigger button */
+.ls-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.3); /* adjust to your navbar color */
+  border-radius: 6px;
+  color: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+
+.ls-trigger:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.6);
+}
+
+/* If your navbar is light, use these instead: */
+/*
+.ls-trigger {
+  border: 1.5px solid rgba(0,0,0,0.2);
+  color: #333;
+}
+.ls-trigger:hover {
+  background: rgba(0,0,0,0.05);
+  border-color: rgba(0,0,0,0.4);
+}
+*/
+
+/* Chevron icon */
+.ls-chevron {
+  width: 10px;
+  height: 6px;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.ls-wrapper.ls-open .ls-chevron {
+  transform: rotate(180deg);
+}
+
+/* Emoji flag */
+.ls-flag {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Dropdown panel */
+.ls-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 150px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  overflow: hidden;
+
+  /* Hidden by default */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+/* Visible state */
+.ls-wrapper.ls-open .ls-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Each language option link */
+.ls-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  color: #1a202c;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background 0.12s;
+}
+
+.ls-option:hover {
+  background: #f7fafc;
+}
+
+.ls-option .ls-flag {
+  font-size: 1.1rem;
+}
+
+.ls-option .ls-label {
+  color: #2d3748;
+}
+
+/* Dark navbar variant — add class "ls-dark-nav" to .ls-wrapper */
+.ls-dark-nav .ls-dropdown {
+  background: #1e2130;
+  border-color: #2d3348;
+}
+
+.ls-dark-nav .ls-option {
+  color: #e2e8f0;
+}
+
+.ls-dark-nav .ls-option:hover {
+  background: #2a3045;
+}
+
+.ls-dark-nav .ls-option .ls-label {
+  color: #e2e8f0;
+}

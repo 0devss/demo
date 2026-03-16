@@ -8,7 +8,7 @@
 
     <title>Demo</title>
 
-
+<base href="../">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
 
-        <?php include 'inc/styles.php'; ?>
+        <?php include '../inc/styles.php'; ?>
 
     <style>
         .table-container {
@@ -95,14 +95,14 @@
 
     <div class="boxed_wrapper ltr">
 
-    <?php include 'inc/nav.php'; ?>
+    <?php include '../inc/de-nav.php'; ?>
 
         <section class="top-sec centred" style="    background: url(images/topbg.jpg);
         background-position: center;
         padding: 150px 0;">
             <div class="container">
                 <div class="row clearfix">
-                    <h2 style="color:#0c406c; font-size:42px; font-weight:bold; text-transform:uppercase"> Candidates
+                    <h2 style="color:#0c406c; font-size:42px; font-weight:bold; text-transform:uppercase"> Kandidaten
                     </h2>
                 </div>
             </div>
@@ -117,54 +117,49 @@
                         <div class="shape-1"></div>
                         <div class="shape-4"></div>
                     </div>
-                    <div class="row align-items-center">
+                    <div class="row">
                         <div class="col-md-12 text-center">
-                            <h2> What RMC Offers! </h2><br>
+                            <h2> Was RMC bietet! </h2><br>
                         </div>
 
 
-<div class="col-sm-4 chooseus-block">
-<div class="chooseus-block-one">
-<div class="inner-box">
+                        <div class="col-sm-4 chooseus-block">
+                            <div class="chooseus-block-one">
+                                <div class="inner-box">
 
-<h3>A Caring Community</h3>
-<p>Join a growing network of fellow nurses from India who have already made Germany
-their home. Share experiences, build friendships, and feel connected from day
-one.
-</p>
+<h3>Eine fürsorgliche Gemeinschaft</h3>
+ <p>Werden Sie Teil eines wachsenden Netzwerks von Pflegekräften aus Indien, die Deutschland bereits zu ihrer Heimat gemacht haben. Tauschen Sie Erfahrungen aus, schließen Sie Freundschaften und fühlen Sie sich vom ersten Tag an verbunden.</p>
 
-</div>
-</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
 
-
-<div class="col-sm-4 chooseus-block">
-<div class="chooseus-block-one">
-<div class="inner-box">
-
-<h3>Support Even After Placement</h3>
-<p>Our commitment doesn’t end once you start working. We stay in touch, offer
-guidance,
-and help you settle smoothly into your new role and environment.</p>
-
-</div>
-</div>
-</div>
+                        <div class="col-sm-4 chooseus-block">
+                            <div class="chooseus-block-one">
+                                <div class="inner-box">
 
 
-<div class="col-sm-4 chooseus-block">
-<div class="chooseus-block-one">
-<div class="inner-box">
+<h3>Unterstützung auch nach der Vermittlung </h3>
+ <p>Unser Engagement endet nicht mit Ihrem Arbeitsbeginn. Wir bleiben mit Ihnen in Kontakt, stehen Ihnen beratend zur Seite und helfen Ihnen dabei, sich reibungslos in Ihre neue Rolle und Umgebung einzuleben.</p>
 
-<h3>Assistance with Housing</h3>
-<p>Finding an apartment in a new country can be challenging. We assist you in
-securing
-comfortable accommodation so you can focus on your career with peace of mind.
-</p>
 
-</div>
-</div>
-</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 chooseus-block">
+                            <div class="chooseus-block-one">
+                                <div class="inner-box">
+
+
+<h3>Hilfe bei der Wohnungssuche </h3>
+ <p>Eine Wohnung in einem neuen Land zu finden, kann eine Herausforderung sein. Wir unterstützen Sie dabei, eine komfortable Unterkunft zu finden, damit Sie sich ganz beruhigt auf Ihre berufliche Laufbahn konzentrieren können.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+  
 
                     </div>
                 </div>
@@ -176,59 +171,57 @@ comfortable accommodation so you can focus on your career with peace of mind.
             </div>
             <div class="auto-container">
                 <div class="row">
+                    <div class="col-md-6">
+                        <div style=" background: #0c5695 ;
+                        position: relative;
+                        padding:40px 25px; ">
+                            <h2 style="color:#fff">Vorteile der Arbeit in Deutschland </h2><br>
 
-<div class="col-md-6">
-<div style=" background: #0c5695 ;
-position: relative;
-padding:40px 25px; ">
-<h2 style="color:#fff">Benefits of Working in Germany </h2><br>
+                            <div style="display: flex; align-items: center;gap:25px">
+                                <span style="width: 80px; flex-shrink: 0; height: 80px; line-height: 70px; font-size: 42px;  border:1px solid #fff;
+                      border-radius: 50%; text-align: center;">💶 </span>
+                                <div>
+                                   <h4 style="color: #8be4ff;">Attraktives Gehalt</h4>
+<p style="color: #fff;">Verdienen Sie ein wettbewerbsfähiges Monatsgehalt ab
+2.800 € – 3.500 €, mit Zuschlägen für Schicht- und Feiertagsarbeit.</p>
+                                </div>
 
-<div class="bnfits">
-<span>💶 </span>
-<div>
-<h4 style="color: #8be4ff;">Attractive Salary</h4>
-<p style="color: #fff;">Earn a competitive monthly salary starting from
-€2,800–€3,500,
-with extra pay for shifts and holidays. </p>
-</div>
+                            </div>
+                            <br><br>
 
-</div>
-<br><br>
+                            <div style="display: flex; align-items: center;gap:25px">
+                                <span style="width: 80px; flex-shrink: 0; height: 80px; line-height: 80px; font-size: 42px;  border:1px solid #fff;
+                      border-radius: 50%; text-align: center;">🛡️ </span>
+                                <div>
+                                    <h4 style="color: #8be4ff;"> Arbeitsplatzsicherheit</h4>
+<p style="color: #fff;">Deutschlands hohe Nachfrage nach Pflegekräften gewährleistet eine stabile, langfristige Beschäftigung sowie berufliche Kontinuität.</p>
+                                </div>
 
-<div class="bnfits">
-<span>🛡️ </span>
-<div>
-<h4 style="color: #8be4ff;"> Job Security</h4>
-<p style="color: #fff;">Germany's high demand for nurses ensures stable, long-term
-employment and career continuity. </p>
-</div>
+                            </div><br><br>
 
-</div><br><br>
+                            <div style="display: flex; align-items: center;gap:25px">
+                                <span style="width: 80px; flex-shrink: 0; height: 80px; line-height: 80px; font-size: 42px;  border:1px solid #fff;
+                      border-radius: 50%; text-align: center;">🏥 </span>
+                                <div>
+                                    <h4 style="color: #8be4ff;"> Modernes Arbeitsumfeld</h4>
+<p style="color: #fff;">Arbeiten Sie in gut ausgestatteten Krankenhäusern – mit klaren Rollen, geregelten Arbeitszeiten und ethischen Standards.</p>
+                                </div>
 
-<div class="bnfits">
-<span>🏥 </span>
-<div>
-<h4 style="color: #8be4ff;"> Modern Work Environment</h4>
-<p style="color: #fff;">Work in well-equipped hospitals with clear roles, regulated
-hours, and ethical standards. </p>
-</div>
+                            </div><br><br>
 
-</div><br><br>
+                            <div style="display: flex; align-items: center;gap:25px">
+                                <span style="width: 80px; flex-shrink: 0; height: 80px; line-height: 80px; font-size: 42px;  border:1px solid #fff;
+                      border-radius: 50%; text-align: center;">🧾 </span>
+                                <div>
+                                   <h4 style="color: #8be4ff;">Sozialleistungen</h4>
+<p style="color: #fff;">Profitieren Sie von Krankenversicherung, Rentenbeiträgen, bezahltem Urlaub und vollen gesetzlichen Arbeitnehmerrechten.</p>
+                                </div>
 
-<div class="bnfits">
-<span>🧾 </span>
-<div>
-<h4 style="color: #8be4ff;"> Social Benefits</h4>
-<p style="color: #fff;">Enjoy health insurance, pension contributions, paid leave,
-and
-full legal employment rights. </p>
-</div>
-
-</div>
-</div>
-</div>
+                            </div>
+                        </div>
 
 
+                    </div>
                 </div>
             </div>
         </section>
@@ -240,7 +233,7 @@ full legal employment rights. </p>
                 <div class="row clearfix justify-content-center">
 
                     <div class="col-sm-12">
-                        <h2 style="text-align:center;">How It Works</h2><br>
+                        <h2 style="text-align:center;">So funktioniert es</h2><br>
                     </div>
 
                     <div class="col-sm-4">
@@ -248,38 +241,42 @@ full legal employment rights. </p>
                             <h6 style="margin:-30px auto 20px; border:1px solid var(--secondary-color); color:var(--secondary-color); 
                             width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; ">1
                             </h6>
-                            <h4> Application and Eligibility Check </h4>
-                            <p>You submit your application. We review your qualifications and check if you meet the
-                                requirements for nursing roles in Germany.</p>
+                            <h4> Bewerbung und Eignungsprüfung </h4>
+<p>Sie reichen Ihre Bewerbung ein. Wir prüfen Ihre Qualifikationen und überprüfen, ob Sie die Anforderungen für Pflegeberufe in Deutschland erfüllen.</p>
+
                         </div>
                     </div>
- 
+
+
+                    <!-- <span style="display:block;transform: rotate(90deg);"><i class="icon-7"></i></span> -->
 
                     <div class="col-sm-4">
                         <div class="workbox" style="background-color: #0c5695;">
                             <h2 style="margin:-30px auto 20px; border:1px solid #0c5695; color:#0c5695; 
                             width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; ">2
                             </h2>
-                            <h4>Document Preparation and Verification </h4>
-                            <p>We help gather and verify necessary documents for professional recognition in Germany.
-                            </p>
+                           <h4>Vorbereitung und Überprüfung von Unterlagen</h4>
+<p>Wir unterstützen Sie bei der Zusammenstellung und Überprüfung der für die berufliche Anerkennung in Deutschland erforderlichen Unterlagen. </p>
+
                         </div>
                     </div>
- 
+
+                    <!-- <span style="display:block;transform: rotate(90deg);"><i class="icon-7"></i></span> -->
+
 
                     <div class="col-sm-4">
                         <div class="workbox" style="background-color: var(--theme-color-2)">
                             <h6 style="margin:-30px auto 20px; border:1px solid var(--theme-color-2); color:var(--theme-color-2); 
                             width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; ">3
                             </h6>
-                            <h4>Job Matching and Interviews
-                            </h4>
-                            <p>Based on your profile, we connect you with hospitals, clinics, or care homes in Germany &
-                                schedule interviews.</p>
+                            <h4>Job-Matching und Vorstellungsgespräche </h4>
+<p>Basierend auf Ihrem Profil vermitteln wir Sie an Krankenhäuser, Kliniken oder Pflegeeinrichtungen in Deutschland und vereinbaren Vorstellungsgespräche.</p>
+
                         </div>
+
                     </div>
 
- 
+                    <!-- <span style="display:block;transform: rotate(90deg);"><i class="icon-7"></i></span> -->
 
                     <div class="col-sm-2"></div>
 
@@ -288,22 +285,22 @@ full legal employment rights. </p>
                             <h6 style="margin:-30px auto 20px; border:1px solid var(--secondary-color); color:var(--secondary-color); 
                             width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; "> 4
                             </h6>
-                            <h4> Visa Process</h4>
-                            <p>Once selected, we assist with the visa application, appointment scheduling, and embassy
-                                documentation.</p>
+                           <h4>Visumverfahren</h4>
+<p>Nach Ihrer Auswahl unterstützen wir Sie bei der Visumbeantragung, der Terminvereinbarung sowie den Unterlagen für die Botschaft.</p>
+
                         </div>
                     </div>
 
-         
+                    <!-- <span style="display:block;transform: rotate(90deg);"><i class="icon-7"></i></span> -->
 
                     <div class="col-sm-4">
                         <div class="workbox" style="background-color: #0c5695;">
                             <h6 style="margin:-30px auto 20px; border:1px solid #0c5695; color: #0c5695; 
                             width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; "> 5
                             </h6>
-                            <h4> Relocation & Travel </h4>
-                            <p>We coordinate your travel to Germany after visa approval and support is provided for
-                                accommodation and local orientation.</p>
+                           <h4> Umzug & Reise </h4>
+<p>Wir koordinieren Ihre Reise nach Deutschland nach Erteilung des Visums und unterstützen Sie bei der Unterkunftssuche sowie der Orientierung vor Ort.</p>
+
                         </div>
                     </div>
 
@@ -326,32 +323,33 @@ full legal employment rights. </p>
             <div class="row clearfix" style="padding:40px 0">
                 <div class="col-sm-12 mt_30">
 
-                    <h2>Germany vs. Other Top Destinations</h2><br>
+                    <h2>Deutschland im Vergleich zu anderen Top-Reisezielen</h2><br>
                     <div class="table-container">
                         <table>
                             <thead>
-                                <tr>
-                                    <th>Category</th>
-                                    <th>Germany</th>
-                                    <th>
-                                        <select
-                                            style="color:#fff;  background-color: #0c406c; font-size: 16px; font-weight: bold; "
-                                            id="countrySelector" onchange="updateComparison()">
-                                            <option value="usa">USA</option>
-                                            <option value="canada">Canada</option>
-                                            <option value="uk">UK</option>
-                                            <option value="nz">New Zealand</option>
-                                        </select>
-                                    </th>
-                                </tr>
+                               <tr>
+<th>Kategorie</th>
+<th>Deutschland</th>
+<th>
+<select
+style="color:#fff; background-color: #0c406c; font-size: 16px; font-weight: bold; "
+id="countrySelector" onchange="updateComparison()">
+<option value="usa">USA</option>
+<option value="canada">Kanada</option>
+<option value="uk">Vereinigtes Königreich</option>
+<option value="nz">Neuseeland</option>
+
+</select>
+
+</th>
+
+</tr>
                             </thead>
                             <tbody id="tableBody"></tbody>
                         </table>
                     </div>
 
-                    <p style="margin-top:20px; font-weight: 500; text-align: center;"> For a detailed analysis of the
-                        costs of living and
-                        disposable income please click <a href="assets/comparison.pdf" target="_blank">here</a>.</p>
+                    <p style="margin-top:20px; font-weight: 500; text-align: center;"> Für eine detaillierte Analyse der Lebenshaltungskosten und des verfügbaren Einkommens klicken Sie bitte  <a href="assets/comparison.pdf" target="_blank">hier</a>.</p>
                 </div>
             </div>
         </div>
@@ -370,30 +368,27 @@ full legal employment rights. </p>
                 <div class="col-md-10">
                     <div
                         style="background: rgba(255, 255, 255, 0.8); padding:30px 20px; border-radius: 15px; position: relative; border:1px solid #fff">
-                        <h2 style="color:var(--secondary-color);">Check Requirements for Working in Germany </h2>
+                        <h2 style="color:var(--secondary-color);">Voraussetzungen für die Arbeit in Deutschland prüfen </h2>
                         <br>
 
-                        <h5>✅ Recognized Nursing Qualification</h5>
-                        <p>You must have a recognized nursing qualification: GNM (General Nursing and Midwifery),
-                            B.Sc. Nursing, or Post Basic B.Sc. Nursing. </p><br>
+<h5>✅ Anerkannte Pflegequalifikation</h5>
+<p>Sie müssen über eine anerkannte Pflegequalifikation verfügen: GNM (General Nursing and Midwifery), B.Sc. Nursing oder Post Basic B.Sc. Nursing.</p><br>
 
-                        <h5>✅ Anerkennung</h5>
-                        <p>Get your qualifications recognized in Germany (Anerkennung). This is a mandatory process
-                            to work legally as a nurse in Germany and we will assist you with this process</p><br>
 
-                        <h5>✅ German Language</h5>
-                        <p>Minimum B1 (intermediate) level is required, but B2 is usually preferred by employers and
-                            often required for for recognition. German courses can be advanced in Germany.
-                        </p><br>
+<h5>✅ Anerkennung</h5>
+<p>Lassen Sie Ihre Qualifikationen in Deutschland anerkennen. Dies ist ein verpflichtender Prozess, um legal als Pflegekraft in Deutschland arbeiten zu können; wir unterstützen Sie bei diesem Verfahren.</p><br>
 
-                        <h5>✅ Employment Visa</h5>
-                        <p>You must have employment visa which requires B1/B2 German, job contract or training
-                            confirmation. We assist you throughout the visa process and job contracting.
-                        </p><br>
 
-                        <h5>✅ Get Registered and Start Working</h5>
-                        <p>After successful recognition and language requirements, you will be registered as a
-                            licensed nurse & can start working in hospitals, elderly care homes, or clinics. </p>
+<h5>✅ Deutschkenntnisse</h5>
+<p>Es ist mindestens das Sprachniveau B1 (Mittelstufe) erforderlich, wobei B2 von Arbeitgebern in der Regel bevorzugt und für die Anerkennung der Qualifikationen häufig vorausgesetzt wird. Deutschkenntnisse können in Deutschland weiter vertieft werden.</p><br>
+
+
+<h5>✅ Arbeitsvisum</h5>
+<p>Sie benötigen ein Arbeitsvisum, für dessen Erteilung Deutschkenntnisse auf dem Niveau B1/B2 sowie ein Arbeitsvertrag oder eine Ausbildungsbestätigung erforderlich sind. Wir begleiten Sie während des gesamten Visumverfahrens sowie beim Abschluss des Arbeitsvertrags.</p><br>
+
+
+<h5>✅ Registrierung und Arbeitsbeginn</h5>
+<p>Nach erfolgreicher Anerkennung Ihrer Qualifikationen und Erfüllung der sprachlichen Anforderungen werden Sie als examinierte Pflegekraft registriert und können Ihre Tätigkeit in Krankenhäusern, Pflegeheimen oder Kliniken aufnehmen. </p>
                     </div>
                 </div>
             </div>
@@ -523,7 +518,7 @@ full legal employment rights. </p>
                     <div class="shape-2" style="background-image: url(images/shape/shape-9.png);"></div>
                 </div>
                 <div class="text-box">
-                    <h2> <span>Still Not Sure?</span> Join our next Info session.</h2>
+                    <h2> <span>Immer noch unsicher? </span>  Nehmen Sie an unserer nächsten Infoveranstaltung teil.</h2>
                 </div>
                 <div class="form-inner">
                     <form method="post" action="contact.php">
@@ -539,7 +534,7 @@ full legal employment rights. </p>
 
  
 
-    <?php include 'inc/footer.php'; ?>
+    <?php include '../inc/de-footer.php'; ?>
 
 
 
@@ -553,106 +548,106 @@ full legal employment rights. </p>
 </div>
 
 
-<?php include 'inc/scripts.php'; ?>
+<?php include '../inc/scripts.php'; ?>
 
     <script>
         const data = {
-            germany: {
-                salary: "37,000 - 58,000 USD/year depending on experience and state",
-                taxes: "30-35% (includes healthcare, pension, unemployment, long-term care)",
-                cost: "58-69",
-                disposable: "Moderate but stable, able to save money",
-                leave: "26-30 days/year",
-                hours: "38-40 hours/week",
-                healthcare: "Universal statutory health insurance (or private), high coverage",
-                childcare: "Public supported day care",
-                visa: "Skilled worker route after German recognition, high demand",
-                citizenship: "Permanent residence after 4-5 years, passport after 5 years",
-                family: "Family can join once income & housing requirements are met",
-                language: "German B1 minimum, B2 preferred",
-                worklife: "Strong protection of working-time laws, paid leave & parental leave"
-            },
+    germany: {
+        salary: "37.000 - 58.000 USD/Jahr je nach Erfahrung und Bundesland",
+        taxes: "30-35% (inkl. Krankenversicherung, Rentenversicherung, Arbeitslosenversicherung, Pflegeversicherung)",
+        cost: "58-69",
+        disposable: "Mittel, aber stabil – Sparen möglich",
+        leave: "26-30 Tage/Jahr",
+        hours: "38-40 Stunden/Woche",
+        healthcare: "Gesetzliche Krankenversicherung (oder privat), hohe Abdeckung",
+        childcare: "Öffentlich unterstützte Kinderbetreuung",
+        visa: "Fachkräfte-Einwanderung nach Anerkennung des Berufs, hoher Bedarf",
+        citizenship: "Niederlassungserlaubnis nach 4-5 Jahren, Staatsbürgerschaft nach 5 Jahren",
+        family: "Familiennachzug möglich, wenn Einkommen und Wohnraum ausreichend sind",
+        language: "Deutsch B1 Minimum, B2 bevorzugt",
+        worklife: "Starker Schutz durch Arbeitszeitgesetze, bezahlter Urlaub und Elternzeit"
+    },
 
-            usa: {
-                salary: "60,000 - 100,000 USD/year (varies by state and city)",
-                taxes: "25-30% (no universal social coverage)",
-                cost: "65-69",
-                disposable: "Moderate to low, high rent & healthcare costs",
-                leave: "10-15 days/year",
-                hours: "36-40 hours/week, often 10-12 hour shifts",
-                healthcare: "No universal coverage, private or employer plans",
-                childcare: "Very expensive and private paid",
-                visa: "Complex employment-based visa process",
-                citizenship: "Green card may take years, passport ~5 years after PR",
-                family: "Family immigration lengthy and expensive",
-                language: "English required + NCLEX + state exam",
-                worklife: "High pay but heavier workload, burnout risk"
-            },
+    usa: {
+        salary: "60.000 - 100.000 USD/Jahr (variiert je nach Bundesstaat und Stadt)",
+        taxes: "25-30% (keine universelle Sozialversicherung)",
+        cost: "65-69",
+        disposable: "Mittel bis niedrig, hohe Miet- und Gesundheitskosten",
+        leave: "10-15 Tage/Jahr",
+        hours: "36-40 Stunden/Woche, oft 10-12 Stunden Schichten",
+        healthcare: "Keine universelle Absicherung, private oder Arbeitgeberversicherung",
+        childcare: "Sehr teuer und privat bezahlt",
+        visa: "Komplexer arbeitsbasierter Visa-Prozess",
+        citizenship: "Green Card kann Jahre dauern, Staatsbürgerschaft ~5 Jahre nach PR",
+        family: "Familienmigration langwierig und teuer",
+        language: "Englisch erforderlich + NCLEX + staatliche Prüfung",
+        worklife: "Hohe Bezahlung, aber höhere Arbeitsbelastung und Burnout-Risiko"
+    },
 
-            canada: {
-                salary: "45,000 - 60,000 USD/year",
-                taxes: "25-30% (includes pension and EI)",
-                cost: "59-70",
-                disposable: "Balanced, but lower in big cities due to high rent",
-                leave: "10-20 days/year",
-                hours: "36-40 hours/week, 12-hour rotating shifts",
-                healthcare: "Public medicare provides good basic coverage",
-                childcare: "Mix of public and private, often costly in cities",
-                visa: "Express Entry (point-based) + provincial licensing required",
-                citizenship: "Between 3-6 years",
-                family: "Family can join once permanent residency obtained",
-                language: "English + provincial registration (French in some provinces)",
-                worklife: "Generally good but high stress due to staff shortages"
-            },
+    canada: {
+        salary: "45.000 - 60.000 USD/Jahr",
+        taxes: "25-30% (inkl. Rentenbeiträge und Arbeitslosenversicherung)",
+        cost: "59-70",
+        disposable: "Ausgeglichen, aber niedriger in Großstädten wegen hoher Mieten",
+        leave: "10-20 Tage/Jahr",
+        hours: "36-40 Stunden/Woche, 12-Stunden-Rotationsschichten",
+        healthcare: "Öffentliches Gesundheitssystem mit guter Grundversorgung",
+        childcare: "Mischung aus öffentlicher und privater Betreuung, oft teuer in Städten",
+        visa: "Express Entry (Punktesystem) + provinzielle Lizenz erforderlich",
+        citizenship: "Zwischen 3-6 Jahren",
+        family: "Familie kann nach Erhalt der permanenten Aufenthaltsgenehmigung nachziehen",
+        language: "Englisch + Registrierung in der Provinz (Französisch in einigen Provinzen)",
+        worklife: "Generell gut, aber hoher Stress wegen Personalmangel"
+    },
 
-            nz: {
-                salary: "45,000 - 55,000 USD/year",
-                taxes: "25-30% (some social coverage included)",
-                cost: "55-65",
-                disposable: "Balanced but low in big cities, expensive groceries",
-                leave: "20 days/year",
-                hours: "40 hours/week",
-                healthcare: "Universal health system",
-                childcare: "Limited places, partly high fees",
-                visa: "Work-to-residence visa for nurses, high demand",
-                citizenship: "After 5-6 years residence-to-citizenship",
-                family: "Family can join once housing & income requirements are met",
-                language: "English required + OET/IELTS",
-                worklife: "Depends strongly on employer and region"
-            },
+    nz: {
+        salary: "45.000 - 55.000 USD/Jahr",
+        taxes: "25-30% (teilweise Sozialleistungen enthalten)",
+        cost: "55-65",
+        disposable: "Ausgeglichen, aber niedriger in großen Städten, teure Lebensmittel",
+        leave: "20 Tage/Jahr",
+        hours: "40 Stunden/Woche",
+        healthcare: "Universelles Gesundheitssystem",
+        childcare: "Begrenzte Plätze, teilweise hohe Gebühren",
+        visa: "Work-to-Residence-Visum für Pflegekräfte, hoher Bedarf",
+        citizenship: "Nach 5-6 Jahren Aufenthalt möglich",
+        family: "Familie kann nachziehen, wenn Einkommen und Wohnraum ausreichend sind",
+        language: "Englisch erforderlich + OET/IELTS",
+        worklife: "Stark abhängig vom Arbeitgeber und der Region"
+    },
 
-            uk: {
-                salary: "50,000 - 55,000 USD/year",
-                taxes: "25-30% (some social coverage included)",
-                cost: "59-68",
-                disposable: "Low in cities like London due to high rent and inflation",
-                leave: "27 days/year",
-                hours: "37.5 hours/week",
-                healthcare: "NHS provides universal healthcare",
-                childcare: "Very high fees compared to nurse salary",
-                visa: "Skilled worker visa with NMC registration",
-                citizenship: "After 5 years → Indefinite Leave → Citizenship later",
-                family: "Family can join if income & visa rules met (high fees)",
-                language: "Proof via OET/IELTS",
-                worklife: "Chronic understaffing affects morale and work-life balance"
-            }
-        };
+    uk: {
+        salary: "50.000 - 55.000 USD/Jahr",
+        taxes: "25-30% (teilweise Sozialleistungen enthalten)",
+        cost: "59-68",
+        disposable: "Niedrig in Städten wie London wegen hoher Mieten und Inflation",
+        leave: "27 Tage/Jahr",
+        hours: "37,5 Stunden/Woche",
+        healthcare: "NHS bietet universelle Gesundheitsversorgung",
+        childcare: "Sehr hohe Gebühren im Vergleich zum Pflegegehalt",
+        visa: "Skilled Worker Visum mit NMC-Registrierung",
+        citizenship: "Nach 5 Jahren → Indefinite Leave → später Staatsbürgerschaft",
+        family: "Familiennachzug möglich, wenn Einkommen und Visa-Regeln erfüllt sind (hohe Gebühren)",
+        language: "Nachweis über OET/IELTS",
+        worklife: "Chronischer Personalmangel beeinflusst Moral und Work-Life-Balance"
+    }
+};
 
-        const benefits = [
-            { key: 'salary', label: 'Gross Salary' },
-            { key: 'taxes', label: 'Taxes' },
-            { key: 'cost', label: 'Cost of Living Index' },
-            { key: 'disposable', label: 'Disposable Income' },
-            { key: 'leave', label: 'Vacation (excl. public holidays)' },
-            { key: 'hours', label: 'Work Hours per Week' },
-            { key: 'healthcare', label: 'Health Insurance' },
-            { key: 'childcare', label: 'Childcare' },
-            { key: 'visa', label: 'Immigration Route' },
-            { key: 'citizenship', label: 'Citizenship Pathway' },
-            { key: 'family', label: 'Family Reunification' },
-            { key: 'language', label: 'Language Requirements' },
-            { key: 'worklife', label: 'Work-Life Balance' }
-        ];
+const benefits = [
+    { key: 'salary', label: 'Bruttogehalt' },
+    { key: 'taxes', label: 'Steuern' },
+    { key: 'cost', label: 'Lebenshaltungskostenindex' },
+    { key: 'disposable', label: 'Verfügbares Einkommen' },
+    { key: 'leave', label: 'Urlaub (ohne gesetzliche Feiertage)' },
+    { key: 'hours', label: 'Arbeitsstunden pro Woche' },
+    { key: 'healthcare', label: 'Krankenversicherung' },
+    { key: 'childcare', label: 'Kinderbetreuung' },
+    { key: 'visa', label: 'Einwanderungsweg' },
+    { key: 'citizenship', label: 'Weg zur Staatsbürgerschaft' },
+    { key: 'family', label: 'Familiennachzug' },
+    { key: 'language', label: 'Sprachanforderungen' },
+    { key: 'worklife', label: 'Work-Life-Balance' }
+];
 
         function updateComparison() {
             const selected = document.getElementById('countrySelector').value;

@@ -98,7 +98,7 @@
                 <div class="row clearfix">
 
                     <div class="col-sm-7">
-                        <h2 style="color:var(--theme-color-2); text-align: left;">Our Core Values </h3><br>
+                        <h2 style="color:var(--theme-color-2); text-align: left;">Our Core Values </h2><br>
                             <p style="text-align:left;">We believe in <b><i> Humanity, Responsibility and Quality.
                                     </i></b>
                                 Our caregivers come from an

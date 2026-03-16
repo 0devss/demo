@@ -23,11 +23,11 @@
                             </ul>
                         </div>
                         <div class="right-column">
-                           <div class="ln-picker-wrapper">
+                            <div class="ln-picker-wrapper">
                                 <button class="ln-picker-btn" id="pickerBtn" aria-haspopup="listbox"
                                     aria-expanded="false">
                                     <span class="globe-icon">🌐</span>
-                                    <span class="btn-label" id="btnLabel">Language</span>
+                                    <span class="btn-label" id="btnLabel">Sprache</span>
                                     <span class="ln-chevron"></span>
                                 </button>
 
@@ -54,7 +54,7 @@
             <div class="header-lower">
                 <div class="container">
                     <div class="outer-box">
-                        <figure class="logo-box"><a href="index.php"><img src="images/logo.jpg" alt=""
+                        <figure class="logo-box"><a href="de/index.php"><img src="images/logo.jpg" alt=""
                                     style="max-height: 90px; padding:6px 0"></a></figure>
                         <div class="menu-area">
                             <!--Mobile Navigation Toggler-->
@@ -66,19 +66,19 @@
                             <nav class="main-menu navbar-expand-md navbar-light clearfix">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li><a href="index.php">Home</a></li>
-                                        <li class="dropdown"><a href="javascript:void(0)">About Us</a>
+                                        <li><a href="de/index.php">Startseite</a></li>
+                                        <li class="dropdown"><a href="javascript:void(0)">Über Uns</a>
                                             <ul>
-                                                <li><a href="about.php">About Us</a>
-                                                <li><a href="sgl-college.php">SGL Nursing</a>
-                                                <li><a href="sgl-hospital.php">SGL Hospital</a>
+                                                <li><a href="de/about.php">Über Uns</a>
+                                                <li><a href="de/sgl-college.php">SGL Nursing</a>
+                                                <li><a href="de/sgl-hospital.php">SGL Hospital</a>
                                             </ul>
 
                                         </li>
-                                        <li><a href="candidates.php">For Candidates</a></li>
-                                        <li><a href="employers.php">For Employers</a></li>
-                                        <li><a href="blog.php">Blog</a></li>
-                                        <li><a href="contact.php">Contact Us</a></li>
+                                        <li><a href="de/candidates.php">Für Kandidaten</a></li>
+                                        <li><a href="de/employers.php">Für Arbeitgeber</a></li>
+                                        <li><a href="de/blog.php">Blog</a></li>
+                                        <li><a href="de/contact.php">Kontakt</a></li>
                                     </ul>
                                 </div>
                             </nav>

@@ -7,6 +7,5 @@
     <script src="js/scrolltop.min.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/jquery.circleType.js"></script>
-
     <!-- main-js -->
     <script src="js/script.js"></script>

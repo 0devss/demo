@@ -435,7 +435,7 @@
    
         document.addEventListener("DOMContentLoaded", function () {
 
-            let page = window.location.pathname.split("/").pop() || "index.html";
+            let page = window.location.pathname.split("/").pop() || "index.php";
 
             document.querySelectorAll('[data-lang]').forEach(function (link) {
 
@@ -450,8 +450,49 @@
             });
 
         });
+
+document.querySelectorAll('[data-lang]').forEach(link => {
+
+link.addEventListener('click', function(e){
+
+e.preventDefault();
+
+let lang = this.dataset.lang;
+
+/* get current page name */
+let page = window.location.pathname.split('/').pop() || "index.php";
+
+if(lang === "en"){
+window.location.href = page;
+}else{
+window.location.href = lang + "/" + page;
+}
+
+});
+
+});
     
-	
+	(function(){
+
+let path = window.location.pathname;
+let lang = '';
+
+if(path.startsWith('/de/')) lang = 'de';
+if(path.startsWith('/pa/')) lang = 'pa';
+
+if(!lang) return;
+
+document.querySelectorAll('a[href$=".php"]').forEach(a=>{
+
+let href = a.getAttribute('href');
+
+if(!href.startsWith('http') && !href.startsWith('/')){
+a.setAttribute('href','/'+lang+'/'+href);
+}
+
+});
+
+})();
 
 })(window.jQuery);
 
