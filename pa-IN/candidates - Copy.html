@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <title>Demo</title>
+
+<base href="../">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
+        
+    <!-- Stylesheets -->
+    <link href="css/font-awesome-all.css" rel="stylesheet">
+    <link href="css/flaticon.css" rel="stylesheet">
+    <link href="css/owl.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <style>
+        .table-container {
+            overflow-x: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 900px;
+        }
+
+        thead {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .table-container th {
+            color: #fff
+        }
+
+        th,
+        td {
+            padding: 12px 16px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f7ff;
+        }
+
+        th {
+            font-size: 16px;
+        }
+
+        td {
+            font-size: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            th,
+            td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+
+        h2 {
+            text-align: center;
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+
+        p.description {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 16px;
+            color: #444;
+        }
+    </style>
+
+
+
+</head>
+
+
+<!-- page wrapper -->
+
+<body>
+
+    <div class="boxed_wrapper ltr">
+
+     
+
+
+        <!-- main header -->
+        <header class="main-header header-style-three">
+            <!-- header-top -->
+            <div class="header-top">
+                <div class="container">
+                    <div class="top-inner">
+                        <div class="left-column">
+                            <ul class="info">
+                                <li>
+                                    <img src="images/icons/icon-6.png" alt="">
+                                    <a href="tel:999">+49 987 6666 543</a>
+                                </li>
+                                <li>
+                                    <img src="images/icons/icon-7.png" alt="">
+                                    <a href="mailto:info@rmcnurses.de">info@rmcnurses.de</a>
+                                </li>
+                                <a href="#"><img src="images/instagram-icon.webp"
+                                        style="max-width: 25px; margin-right: 10px;"></a>
+                                <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a>
+                            </ul>
+                        </div>
+                        <div class="right-column">
+                            <div class="ln-picker-wrapper">
+                                <button class="ln-picker-btn" id="pickerBtn" aria-haspopup="listbox"
+                                    aria-expanded="false">
+                                    <span class="globe-icon">🌐</span>
+                                    <span class="btn-label" id="btnLabel">ਭਾਸ਼ਾ</span>
+                                    <span class="ln-chevron"></span>
+                                </button>
+
+                                <div class="ln-dropdown" id="ln-dropdown" role="listbox">
+                                    <a href="#" hreflang="en" data-lang="en">
+                                        <span class="flag"> <img src="images/en.png"> </span>
+                                        <span class="lang-name">English</span>
+                                    </a>
+                                    <a href="#" hreflang="de" data-lang="de">
+                                        <span class="flag"> <img src="images/de.png"> </span>
+                                        <span class="lang-name">Deutsch</span>
+                                    </a>
+                                    <a href="#" hreflang="pa-IN" data-lang="pa-IN">
+                                        <span class="flag"> <img src="images/in.png"> </span>
+                                        <span class="lang-name">ਪੰਜਾਬੀ</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="container">
+                    <div class="outer-box">
+                        <figure class="logo-box"><a href="pa-IN/index.html"><img src="images/logo.jpg" alt=""
+                                    style="max-height: 90px; padding:6px 0"></a></figure>
+                        <div class="menu-area">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light clearfix">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                   <ul class="navigation clearfix">
+    <li><a href="pa-IN/index.html">ਮੁੱਖ ਪੰਨਾ</a></li>
+    <li class="dropdown"><a href="javascript:void(0)">ਸਾਡੇ ਬਾਰੇ</a>
+        <ul>
+            <li><a href="pa-IN/about.html">ਸਾਡੇ ਬਾਰੇ</a></li>
+            <li><a href="pa-IN/sgl-college.html">SGL ਨਰਸਿੰਗ</a></li>
+            <li><a href="pa-IN/sgl-hospital.html">SGL ਹਸਪਤਾਲ</a></li>
+        </ul>
+    </li>
+    <li><a href="pa-IN/candidates.html">ਉਮੀਦਵਾਰਾਂ ਲਈ</a></li>
+    <li><a href="pa-IN/employers.html">ਨਿਯੋਗਕਰਤਾਵਾਂ ਲਈ</a></li>
+    <li><a href="pa-IN/blog.html">ਬਲੌਗ</a></li>
+    <li><a href="pa-IN/contact.html">ਸੰਪਰਕ ਕਰੋ</a></li>
+</ul>
+                                </div>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="container">
+                    <div class="outer-box">
+                        <figure class="logo-box"><a href="pa-IN/index.html"><img src="images/logo.jpg" alt=""
+                                    style="max-height: 90px; padding:6px 0"></a></figure>
+                        <div class="menu-area">
+                            <nav class="main-menu clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+
+      
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="pa-IN/index.html"><img src="images/logo.jpg" alt="" title=""
+                            style="max-height: 90px; padding:6px 0"></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li> <a href="#"><img src="images/instagram-icon.webp"
+                                    style="max-width: 25px; margin-right: 2px;"></a> </li>
+                        <li> <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 25px;"></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- End Mobile Menu -->
+
+        <section class="top-sec centred" style="    background: url(images/topbg.jpg);
+        background-position: center;
+        padding: 150px 0;">
+            <div class="container">
+                <div class="row clearfix">
+                    <h2 style="color:#0c406c; font-size:42px; font-weight:bold; text-transform:uppercase"> ਉਮੀਦਵਾਰਾਂ ਲਈ
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="dueal-section alternat-3 p_relative pl_100 pr_100 pt_80 pb_80">
+            <div class="outer-container p_relative pt_60 pb_60">
+
+                <div class="container">
+
+                    <div class="shape">
+                        <div class="shape-1"></div>
+                        <div class="shape-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2> RMC ਕੀ ਪ੍ਰਦਾਨ ਕਰਦਾ ਹੈ! </h2><br>
+                        </div>
+
+
+<div class="col-sm-4 chooseus-block">
+<div class="chooseus-block-one">
+<div class="inner-box">
+
+<h3>ਇੱਕ ਸੰਭਾਲਣ ਵਾਲੀ ਕਮਿਊਨਿਟੀ</h3>
+<p>ਭਾਰਤ ਤੋਂ ਆਏ ਨਰਸਾਂ ਦੇ ਵਧ ਰਹੇ ਨੈੱਟਵਰਕ ਨਾਲ ਜੁੜੋ ਜਿਨ੍ਹਾਂ ਨੇ ਪਹਿਲਾਂ ਹੀ ਜਰਮਨੀ
+ਨੂੰ ਆਪਣਾ ਘਰ ਬਣਾ ਲਿਆ ਹੈ। ਤਜਰਬੇ ਸਾਂਝੇ ਕਰੋ, ਦੋਸਤੀਆਂ ਬਣਾਓ ਅਤੇ ਪਹਿਲੇ ਦਿਨ
+ਤੋਂ ਹੀ ਆਪਣੇ ਆਪ ਨੂੰ ਜੁੜਿਆ ਮਹਿਸੂਸ ਕਰੋ।
+</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-4 chooseus-block">
+<div class="chooseus-block-one">
+<div class="inner-box">
+
+<h3>ਨਿਯੁਕਤੀ ਤੋਂ ਬਾਅਦ ਵੀ ਸਹਾਇਤਾ</h3>
+<p>ਸਾਡੀ ਵਚਨਬੱਧਤਾ ਤੁਹਾਡੇ ਕੰਮ ਸ਼ੁਰੂ ਕਰਨ ਨਾਲ ਖਤਮ ਨਹੀਂ ਹੁੰਦੀ। ਅਸੀਂ ਤੁਹਾਡੇ ਨਾਲ
+ਸੰਪਰਕ ਵਿੱਚ ਰਹਿੰਦੇ ਹਾਂ, ਮਾਰਗਦਰਸ਼ਨ ਦਿੰਦੇ ਹਾਂ ਅਤੇ ਤੁਹਾਨੂੰ ਆਪਣੇ ਨਵੇਂ ਕੰਮ ਅਤੇ
+ਮਾਹੌਲ ਵਿੱਚ ਆਸਾਨੀ ਨਾਲ ਸੈਟਲ ਹੋਣ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਾਂ।</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="col-sm-4 chooseus-block">
+<div class="chooseus-block-one">
+<div class="inner-box">
+
+<h3>ਰਿਹਾਇਸ਼ ਲੱਭਣ ਵਿੱਚ ਮਦਦ</h3>
+<p>ਨਵੇਂ ਦੇਸ਼ ਵਿੱਚ ਅਪਾਰਟਮੈਂਟ ਲੱਭਣਾ ਕਈ ਵਾਰ ਮੁਸ਼ਕਲ ਹੋ ਸਕਦਾ ਹੈ। ਅਸੀਂ ਤੁਹਾਨੂੰ
+ਆਰਾਮਦਾਇਕ ਰਹਿਣ ਲਈ ਥਾਂ ਲੱਭਣ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਾਂ ਤਾਂ ਜੋ ਤੁਸੀਂ ਨਿਸ਼ਚਿੰਤ ਹੋ ਕੇ
+ਆਪਣੇ ਕਰੀਅਰ ਉੱਤੇ ਧਿਆਨ ਦੇ ਸਕੋ।
+</p>
+
+</div>
+</div>
+</div>
+  
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe-section" style="position:relative">
+            <div class="bg-layer parallax-bg" data-parallax='{"y": 100}' style="background-image: url(images/bg.webp);">
+            </div>
+            <div class="auto-container">
+                <div class="row">
+ <div class="col-md-6">
+<div style=" background: #0c5695 ;
+position: relative;
+padding:40px 25px; ">
+<h2 style="color:#fff">ਜਰਮਨੀ ਵਿੱਚ ਕੰਮ ਕਰਨ ਦੇ ਫਾਇਦੇ</h2><br>
+
+<div class="bnfits">
+<span>💶 </span>
+<div>
+<h4 style="color: #8be4ff;">ਆਕਰਸ਼ਕ ਤਨਖਾਹ</h4>
+<p style="color: #fff;">€2,800–€3,500 ਤੋਂ ਸ਼ੁਰੂ ਹੋਣ ਵਾਲੀ ਮੁਕਾਬਲੇਯੋਗ ਮਹੀਨਾਵਾਰ ਤਨਖਾਹ ਕਮਾਓ,
+ਜਿਸ ਵਿੱਚ ਸ਼ਿਫਟਾਂ ਅਤੇ ਛੁੱਟੀਆਂ ਲਈ ਵਾਧੂ ਭੁਗਤਾਨ ਵੀ ਮਿਲਦਾ ਹੈ।</p>
+</div>
+
+</div>
+<br><br>
+
+<div class="bnfits">
+<span>🛡️ </span>
+<div>
+<h4 style="color: #8be4ff;">ਨੌਕਰੀ ਦੀ ਸੁਰੱਖਿਆ</h4>
+<p style="color: #fff;">ਜਰਮਨੀ ਵਿੱਚ ਨਰਸਾਂ ਦੀ ਉੱਚ ਮੰਗ ਕਾਰਨ ਲੰਬੇ ਸਮੇਂ ਲਈ ਸਥਿਰ
+ਰੋਜ਼ਗਾਰ ਅਤੇ ਕਰੀਅਰ ਦੀ ਨਿਰੰਤਰਤਾ ਮਿਲਦੀ ਹੈ।</p>
+</div>
+
+</div><br><br>
+
+<div class="bnfits">
+<span>🏥 </span>
+<div>
+<h4 style="color: #8be4ff;">ਆਧੁਨਿਕ ਕੰਮਕਾਜ ਮਾਹੌਲ</h4>
+<p style="color: #fff;">ਸੁਵਿਧਾਵਾਂ ਨਾਲ ਲੈਸ ਹਸਪਤਾਲਾਂ ਵਿੱਚ ਕੰਮ ਕਰੋ ਜਿੱਥੇ ਸਪਸ਼ਟ
+ਜ਼ਿੰਮੇਵਾਰੀਆਂ, ਨਿਯਮਿਤ ਕੰਮ ਘੰਟੇ ਅਤੇ ਨੈਤਿਕ ਮਿਆਰ ਹੁੰਦੇ ਹਨ।</p>
+</div>
+
+</div><br><br>
+
+<div class="bnfits">
+<span>🧾 </span>
+<div>
+<h4 style="color: #8be4ff;">ਸਮਾਜਿਕ ਲਾਭ</h4>
+<p style="color: #fff;">ਹੈਲਥ ਇਨਸ਼ੋਰੈਂਸ, ਪੈਂਸ਼ਨ ਯੋਗਦਾਨ, ਤਨਖਾਹ ਸਮੇਤ ਛੁੱਟੀਆਂ ਅਤੇ
+ਪੂਰੇ ਕਾਨੂੰਨੀ ਰੋਜ਼ਗਾਰ ਅਧਿਕਾਰਾਂ ਦਾ ਲਾਭ ਲਓ।</p>
+</div>
+
+</div>
+</div>
+</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- team-section -->
+        <section class="team-section centred pt_110 pb_70" style="position:relative;">
+            <div class="pattern-layer" style="background-image: url(images/shape/shape-6.png);"></div>
+            <div class="container">
+                <div class="row clearfix justify-content-center">
+
+               <div class="col-sm-12">
+    <h2 style="text-align:center;">ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ</h2><br>
+</div>
+
+<div class="col-sm-4">
+    <div class="workbox">
+        <h6 style="margin:-30px auto 20px; border:1px solid var(--secondary-color); color:var(--secondary-color); 
+        width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; ">1
+        </h6>
+        <h4>ਅਰਜ਼ੀ ਅਤੇ ਯੋਗਤਾ ਦੀ ਜਾਂਚ</h4>
+        <p>ਤੁਸੀਂ ਆਪਣੀ ਅਰਜ਼ੀ ਜਮ੍ਹਾਂ ਕਰਵਾਉਂਦੇ ਹੋ। ਅਸੀਂ ਤੁਹਾਡੀਆਂ ਯੋਗਤਾਵਾਂ ਦੀ ਸਮੀਖਿਆ ਕਰਦੇ ਹਾਂ ਅਤੇ
+        ਜਾਂਚਦੇ ਹਾਂ ਕਿ ਕੀ ਤੁਸੀਂ ਜਰਮਨੀ ਵਿੱਚ ਨਰਸਿੰਗ ਨੌਕਰੀਆਂ ਲਈ ਲੋੜੀਂਦੀਆਂ ਸ਼ਰਤਾਂ ਪੂਰੀਆਂ ਕਰਦੇ ਹੋ।</p>
+    </div>
+</div>
+
+
+<div class="col-sm-4">
+    <div class="workbox" style="background-color: #0c5695;">
+        <h2 style="margin:-30px auto 20px; border:1px solid #0c5695; color:#0c5695; 
+        width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; ">2
+        </h2>
+        <h4>ਦਸਤਾਵੇਜ਼ ਤਿਆਰੀ ਅਤੇ ਪੁਸ਼ਟੀ</h4>
+        <p>ਅਸੀਂ ਜਰਮਨੀ ਵਿੱਚ ਪੇਸ਼ੇਵਰ ਮਾਨਤਾ ਲਈ ਲੋੜੀਂਦੇ ਦਸਤਾਵੇਜ਼ ਇਕੱਠੇ ਕਰਨ ਅਤੇ ਉਨ੍ਹਾਂ ਦੀ
+        ਜਾਂਚ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਾਂ।</p>
+    </div>
+</div>
+
+
+<div class="col-sm-4">
+    <div class="workbox" style="background-color: var(--theme-color-2)">
+        <h6 style="margin:-30px auto 20px; border:1px solid var(--theme-color-2); color:var(--theme-color-2); 
+        width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; ">3
+        </h6>
+        <h4>ਨੌਕਰੀ ਮਿਲਾਣ ਅਤੇ ਇੰਟਰਵਿਊ</h4>
+        <p>ਤੁਹਾਡੇ ਪ੍ਰੋਫਾਈਲ ਦੇ ਅਧਾਰ 'ਤੇ ਅਸੀਂ ਤੁਹਾਨੂੰ ਜਰਮਨੀ ਦੇ ਹਸਪਤਾਲਾਂ, ਕਲੀਨਿਕਾਂ ਜਾਂ
+        ਕੇਅਰ ਹੋਮਜ਼ ਨਾਲ ਜੋੜਦੇ ਹਾਂ ਅਤੇ ਇੰਟਰਵਿਊ ਦਾ ਸਮਾਂ ਨਿਰਧਾਰਤ ਕਰਦੇ ਹਾਂ।</p>
+    </div>
+</div>
+
+
+<div class="col-sm-2"></div>
+
+<div class="col-sm-4">
+    <div class="workbox">
+        <h6 style="margin:-30px auto 20px; border:1px solid var(--secondary-color); color:var(--secondary-color); 
+        width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; "> 4
+        </h6>
+        <h4>ਵੀਜ਼ਾ ਪ੍ਰਕਿਰਿਆ</h4>
+        <p>ਚੁਣੇ ਜਾਣ ਤੋਂ ਬਾਅਦ ਅਸੀਂ ਵੀਜ਼ਾ ਅਰਜ਼ੀ, ਅਪਾਇੰਟਮੈਂਟ ਸ਼ਡਿਊਲ ਕਰਨ ਅਤੇ ਦੂਤਾਵਾਸ ਲਈ
+        ਲੋੜੀਂਦੇ ਦਸਤਾਵੇਜ਼ਾਂ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਦੇ ਹਾਂ।</p>
+    </div>
+</div>
+
+
+<div class="col-sm-4">
+    <div class="workbox" style="background-color: #0c5695;">
+        <h6 style="margin:-30px auto 20px; border:1px solid #0c5695; color: #0c5695; 
+        width:40px; height: 40px; border-radius: 50%; background-color: #fff; font-size: 30px; "> 5
+        </h6>
+        <h4>ਸਥਾਨਾਂਤਰਣ ਅਤੇ ਯਾਤਰਾ</h4>
+        <p>ਵੀਜ਼ਾ ਮਨਜ਼ੂਰੀ ਤੋਂ ਬਾਅਦ ਅਸੀਂ ਤੁਹਾਡੀ ਜਰਮਨੀ ਯਾਤਰਾ ਦਾ ਪ੍ਰਬੰਧ ਕਰਦੇ ਹਾਂ ਅਤੇ
+        ਰਹਿਣ ਦੀ ਥਾਂ ਅਤੇ ਸਥਾਨਕ ਜਾਣਕਾਰੀ ਲਈ ਸਹਾਇਤਾ ਪ੍ਰਦਾਨ ਕਰਦੇ ਹਾਂ।</p>
+    </div>
+</div>
+                 
+            </div>
+    </div>
+
+    </section>
+
+
+
+    <section class=" p_relative   pt_40 pb_80" style="background-color:#EFF2E6">
+
+
+
+        <div class="auto-container">
+            <div class="row clearfix" style="padding:40px 0">
+                <div class="col-sm-12 mt_30">
+
+ <h2>ਜਰਮਨੀ vs ਹੋਰ ਪ੍ਰਮੁੱਖ ਦੇਸ਼</h2><br>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>ਸ਼੍ਰੇਣੀ</th>
+                <th>ਜਰਮਨੀ</th>
+                <th>
+                    <select
+                        style="color:#fff;  background-color: #0c406c; font-size: 16px; font-weight: bold; "
+                        id="countrySelector" onchange="updateComparison()">
+                        <option value="usa">ਅਮਰੀਕਾ (USA)</option>
+                        <option value="canada">ਕੈਨੇਡਾ</option>
+                        <option value="uk">ਯੂਕੇ (UK)</option>
+                        <option value="nz">ਨਿਊਜ਼ੀਲੈਂਡ</option>
+                    </select>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</div>
+
+                   <p style="margin-top:20px; font-weight: 500; text-align: center;">
+ਜੀਵਨ ਯਾਪਨ ਦੇ ਖਰਚਿਆਂ ਅਤੇ ਉਪਲਬਧ ਆਮਦਨ ਦੀ ਵਿਸਥਾਰਪੂਰਕ ਵਿਸ਼ਲੇਸ਼ਣ ਲਈ ਕਿਰਪਾ ਕਰਕੇ 
+<a href="assets/comparison.pdf" target="_blank">ਇੱਥੇ</a> ਕਲਿੱਕ ਕਰੋ।
+</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <section class="subscribe-section pt_100 pb_100" style="position:relative">
+        <div class="bg-layer parallax-bg" data-parallax='{"y": 100}' style="background-image: url(images/reqs.jpeg);">
+        </div>
+        <div class="auto-container">
+            <div class="row">
+                 <div class="col-md-10">
+    <div
+        style="background: rgba(255, 255, 255, 0.8); padding:30px 20px; border-radius: 15px; position: relative; border:1px solid #fff">
+        <h2 style="color:var(--secondary-color);">ਜਰਮਨੀ ਵਿੱਚ ਕੰਮ ਕਰਨ ਲਈ ਲੋੜੀਂਦੀਆਂ ਸ਼ਰਤਾਂ ਦੀ ਜਾਂਚ ਕਰੋ</h2>
+        <br>
+
+        <h5>✅ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਨਰਸਿੰਗ ਯੋਗਤਾ</h5>
+        <p>ਤੁਹਾਡੇ ਕੋਲ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਨਰਸਿੰਗ ਯੋਗਤਾ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ: GNM (ਜਨਰਲ ਨਰਸਿੰਗ ਅਤੇ ਮਿਡਵਾਈਫਰੀ),
+            B.Sc. ਨਰਸਿੰਗ, ਜਾਂ ਪੋਸਟ ਬੇਸਿਕ B.Sc. ਨਰਸਿੰਗ।</p><br>
+
+        <h5>✅ Anerkennung</h5>
+        <p>ਆਪਣੀਆਂ ਯੋਗਤਾਵਾਂ ਨੂੰ ਜਰਮਨੀ ਵਿੱਚ ਮਾਨਤਾ ਦਿਵਾਓ (Anerkennung)। ਇਹ ਜਰਮਨੀ ਵਿੱਚ ਨਰਸ ਵਜੋਂ ਕਾਨੂੰਨੀ ਤੌਰ ‘ਤੇ
+            ਕੰਮ ਕਰਨ ਲਈ ਲਾਜ਼ਮੀ ਪ੍ਰਕਿਰਿਆ ਹੈ ਅਤੇ ਅਸੀਂ ਇਸ ਪ੍ਰਕਿਰਿਆ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਾਂਗੇ।</p><br>
+
+        <h5>✅ ਜਰਮਨ ਭਾਸ਼ਾ</h5>
+        <p>ਘੱਟੋ-ਘੱਟ B1 (ਇੰਟਰਮੀਡੀਏਟ) ਪੱਧਰ ਲਾਜ਼ਮੀ ਹੈ, ਪਰ ਨਿਯੋਗਕਰਤਾਵਾਂ ਵੱਲੋਂ ਆਮ ਤੌਰ ‘ਤੇ B2 ਨੂੰ ਤਰਜੀਹ
+            ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ ਅਤੇ ਅਕਸਰ ਮਾਨਤਾ ਲਈ ਵੀ ਲੋੜੀਂਦਾ ਹੁੰਦਾ ਹੈ। ਜਰਮਨ ਭਾਸ਼ਾ ਦੇ ਕੋਰਸ ਜਰਮਨੀ ਵਿੱਚ
+            ਅੱਗੇ ਵੀ ਜਾਰੀ ਰੱਖੇ ਜਾ ਸਕਦੇ ਹਨ।</p><br>
+
+        <h5>✅ ਰੋਜ਼ਗਾਰ ਵੀਜ਼ਾ</h5>
+        <p>ਤੁਹਾਡੇ ਕੋਲ ਰੋਜ਼ਗਾਰ ਵੀਜ਼ਾ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ ਜਿਸ ਲਈ B1/B2 ਜਰਮਨ, ਨੌਕਰੀ ਦਾ ਕਾਂਟ੍ਰੈਕਟ ਜਾਂ ਟ੍ਰੇਨਿੰਗ
+            ਦੀ ਪੁਸ਼ਟੀ ਲੋੜੀਂਦੀ ਹੁੰਦੀ ਹੈ। ਅਸੀਂ ਵੀਜ਼ਾ ਪ੍ਰਕਿਰਿਆ ਅਤੇ ਨੌਕਰੀ ਦੇ ਕਾਂਟ੍ਰੈਕਟ ਵਿੱਚ ਤੁਹਾਡੀ ਪੂਰੀ
+            ਸਹਾਇਤਾ ਕਰਦੇ ਹਾਂ।</p><br>
+
+        <h5>✅ ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਕਰਵਾਓ ਅਤੇ ਕੰਮ ਸ਼ੁਰੂ ਕਰੋ</h5>
+        <p>ਮਾਨਤਾ ਅਤੇ ਭਾਸ਼ਾ ਦੀਆਂ ਲੋੜੀਂਦੀਆਂ ਸ਼ਰਤਾਂ ਪੂਰੀਆਂ ਹੋਣ ਤੋਂ ਬਾਅਦ, ਤੁਹਾਨੂੰ ਲਾਇਸੰਸ ਪ੍ਰਾਪਤ ਨਰਸ ਵਜੋਂ
+            ਰਜਿਸਟਰ ਕੀਤਾ ਜਾਵੇਗਾ ਅਤੇ ਤੁਸੀਂ ਹਸਪਤਾਲਾਂ, ਬਜ਼ੁਰਗਾਂ ਦੀ ਦੇਖਭਾਲ ਦੇ ਘਰਾਂ ਜਾਂ ਕਲੀਨਿਕਾਂ ਵਿੱਚ
+            ਕੰਮ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹੋ।</p>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- sign-section -->
+    <section class="sign-section pt_60 pb_90">
+        <div class="pattern-layer" style="background-image: url(images/shape/shape-25.png);"></div>
+        <div class="auto-container">
+            <h2 style="text-align:center;"> ਸਾਡੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ </h2><br>
+            <div class="form-inner">
+                <form class="row clearfix" method="post" action="login.html">
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਪਹਿਲਾ ਨਾਮ* <span>*</span></label>
+            <input type="text" name="fname" required>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਆਖਰੀ ਨਾਮ <span>*</span></label>
+            <input type="text" name="lname" required>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਲਿੰਗ <span>*</span></label>
+            <select name="gender" required>
+                <option value="male">ਪੁਰਸ਼</option>
+                <option value="female">ਇਸਤਰੀ</option>
+                <option value="other">ਹੋਰ</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਜਨਮ ਤਾਰੀਖ <span>*</span></label>
+            <input type="text" name="birthdate" required>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਰਿਹਾਇਸ਼ ਦਾ ਸ਼ਹਿਰ <span>*</span></label>
+            <input type="text" name="city" required>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਵਿਵਾਹਿਕ ਸਥਿਤੀ <span>*</span></label>
+            <select name="civil" required>
+                <option value="Single">ਕੁਆਰਾ / ਕੁਆਰੀ</option>
+                <option value="In a Relationship">ਰਿਸ਼ਤੇ ਵਿੱਚ</option>
+                <option value="Married">ਵਿਆਹਿਆ</option>
+                <option value="Widowed">ਵਿਧਵਾ / ਵਿਧੁਰ</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਕੀ ਤੁਹਾਡੇ ਬੱਚੇ ਹਨ?<span>*</span></label>
+            <select name="children" required>
+                <option value="Yes">ਹਾਂ</option>
+                <option value="No">ਨਹੀਂ</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਨਰਸਿੰਗ ਵਿੱਚ ਤੁਹਾਡੀ ਸਭ ਤੋਂ ਉੱਚੀ ਡਿਗਰੀ ਕੀ ਹੈ?<span>*</span></label>
+            <select name="children" required>
+                <option value="ANM">ANM</option>
+                <option value="GNM">GNM</option>
+                <option value="Bachelor of Science in Nursing">ਬੈਚਲਰ ਆਫ ਸਾਇੰਸ ਇਨ ਨਰਸਿੰਗ</option>
+                <option value="Master of Science in Nursing">ਮਾਸਟਰ ਆਫ ਸਾਇੰਸ ਇਨ ਨਰਸਿੰਗ</option>
+                <option value="Post Basic Bsc">ਪੋਸਟ ਬੇਸਿਕ BSc</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਕੀ ਤੁਹਾਡੇ ਕੋਲ ਨਰਸਿੰਗ ਲਾਇਸੈਂਸ ਹੈ?<span>*</span></label>
+            <select name="children" required>
+                <option value="Yes">ਹਾਂ</option>
+                <option value="No, I'm waiting for it">ਨਹੀਂ, ਮੈਂ ਇਸ ਦੀ ਉਡੀਕ ਕਰ ਰਿਹਾ/ਰਹੀ ਹਾਂ</option>
+                <option value="No, and I won't recieve it">ਨਹੀਂ, ਅਤੇ ਮੈਨੂੰ ਇਹ ਨਹੀਂ ਮਿਲੇਗਾ</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="form-group">
+            <label>ਦਸਤਾਵੇਜ਼ ਅੱਪਲੋਡ ਕਰੋ <span>*</span></label>
+            <input type="file" name="file" required>
+        </div>
+    </div>
+
+    <div class="form-group message-btn">
+        <button type="submit" class="theme-btn btn-one">ਹੁਣ ਭੇਜੋ</button>
+    </div>
+
+</form>
+
+            </div>
+        </div>
+    </section>
+    <!-- sign-section end -->
+
+
+    <section class="subscribe-style-two pb_90">
+        <div class="auto-container">
+            <div class="inner-container">
+                <div class="shape-box">
+                    <div class="shape-1" style="background-image: url(images/shape/shape-8.png);"></div>
+                    <div class="shape-2" style="background-image: url(images/shape/shape-9.png);"></div>
+                </div>
+                <div class="text-box">
+                  <h2><span>ਹਾਲੇ ਵੀ ਸੋਚ ਰਹੇ ਹੋ?</span> ਸਾਡੀ ਅਗਲੀ ਜਾਣਕਾਰੀ ਸੈਸ਼ਨ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ।</h2>
+                </div>
+                <div class="form-inner">
+                    <form method="post" action="contact.html">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address" required="">
+                            <button type="submit" class="theme-btn btn-one">Sign Up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <!-- main-footer -->
+<footer class="main-footer light-footer">
+    <div class="widget-section p_relative pt_80 pb_100">
+        <div class="auto-container">
+            <div class="row clearfix">
+
+                <div class="col-sm-4 footer-column">
+                    <div class="footer-widget logo-widget mr_30">
+                        <figure class="footer-logo mb_20"><a href="pa-IN/index.html"><img src="images/logo.jpg"
+                                    style="max-height: 80px; padding:15px 30px; border-radius: 15px; background-color: #fff;"
+                                    alt=""></a></figure>
+                        <p>ਅਸੀਂ ਜਰਮਨੀ ਵਿੱਚ ਅਧਾਰਿਤ ਇੱਕ ਭਰਤੀ ਏਜੰਸੀ ਹਾਂ ਜਿਸ ਦੀਆਂ ਜੜਾਂ ਭਾਰਤ ਨਾਲ ਜੁੜੀਆਂ ਹਨ। ਅਸੀਂ ਭਾਰਤੀ ਨਰਸਾਂ ਅਤੇ ਹੈਲਥਕੇਅਰ ਪੇਸ਼ੇਵਰਾਂ ਨੂੰ ਜਰਮਨੀ ਵਿੱਚ ਨੌਕਰੀਆਂ ਦਿਵਾਉਣ ਵਿੱਚ ਖ਼ਾਸ ਮਾਹਰ ਹਾਂ।
+                        </p>
+                        <div class="btn-box"><a href="pa-IN/about.html" class="theme-btn btn-one"><span>ਹੋਰ ਪੜ੍ਹੋ</span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-3 footer-column">
+                    <div class="footer-widget links-widget">
+                        <div class="widget-title">
+                            <h4>ਲਿੰਕ</h4>
+                        </div>
+                        <div class="widget-content">
+                            <ul class="links-list clearfix">
+                                <li><a href="pa-IN/index.html">ਮੁੱਖ ਪੰਨਾ</a></li>
+                                <li><a href="pa-IN/about.html">ਸਾਡੇ ਬਾਰੇ</a></li>
+                                <li><a href="pa-IN/candidates.html">ਉਮੀਦਵਾਰਾਂ ਲਈ</a></li>
+                                <li><a href="pa-IN/employers.html">ਨਿਯੋਗਕਰਤਾਵਾਂ ਲਈ</a></li>
+                                <li><a href="pa-IN/blog.html">ਬਲੌਗ</a></li>
+                                <li><a href="pa-IN/contact.html">ਸੰਪਰਕ ਕਰੋ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 footer-column">
+                    <div class="footer-widget links-widget">
+                        <div class="widget-title">
+                            <h4>ਸੰਪਰਕ ਜਾਣਕਾਰੀ</h4>
+                        </div>
+                        <div class="widget-content">
+                            <ul class="links-list clearfix">
+                                <li><a href="#">ਪਤਾ:
+                                        RMC Nurses GmbH
+                                        Alt Oberliederbach 35
+                                        65835 Liederbach am Taunus
+                                        Germany
+                                    </a></li>
+
+                                <li><a href="#">ਮੋਬਾਈਲ:
+                                        +49 999 7865 43232</a></li>
+
+                                <li><a href="#">ਈਮੇਲ:
+                                        info@rmcnurses.de
+                                    </a></li>
+                            </ul><br>
+                            <a href="#"><img src="images/instagram-icon.webp"
+                                    style="max-width: 35px; margin-right: 10px;"></a>
+                            <a href="#"><img src="images/tiktok-icon.webp" style="max-width: 35px;"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="auto-container">
+            <div class="bottom-inner">
+                <div class="copyright">
+                    <p>ਕਾਪੀਰਾਈਟ &copy; <span id="year"></span>. ਸਭ ਹੱਕ ਰਾਖਵੇਂ ਹਨ।</p>
+
+                    <script>
+                        document.getElementById("year").textContent = new Date().getFullYear();
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- main-footer end -->
+
+
+
+<!--Scroll to top-->
+<div class="scroll-to-top">
+    <svg class="scroll-top-inner" viewbox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+    </svg>
+</div>
+
+</div>
+
+
+    <!-- jequery plugins -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/parallax-scroll.js"></script>
+    <script src="js/scrolltop.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.circleType.js"></script>
+    <!-- main-js -->
+    <script src="js/script.js"></script>
+
+    <script>
+const data = {
+    germany: {
+        salary: "ਤਜਰਬੇ ਅਤੇ ਰਾਜ ਦੇ ਅਨੁਸਾਰ 37,000 - 58,000 USD ਪ੍ਰਤੀ ਸਾਲ",
+        taxes: "30-35% (ਇਸ ਵਿੱਚ ਸਿਹਤ ਸੇਵਾ, ਪੈਨਸ਼ਨ, ਬੇਰੁਜ਼ਗਾਰੀ, ਲੰਬੇ ਸਮੇਂ ਦੀ ਦੇਖਭਾਲ ਸ਼ਾਮਲ ਹੈ)",
+        cost: "58-69",
+        disposable: "ਮੱਧਮ ਪਰ ਸਥਿਰ, ਪੈਸੇ ਬਚਾਉਣ ਦੀ ਸੰਭਾਵਨਾ",
+        leave: "26-30 ਦਿਨ/ਸਾਲ",
+        hours: "38-40 ਘੰਟੇ/ਹਫ਼ਤਾ",
+        healthcare: "ਸਾਰਵਭੌਮ ਕਾਨੂੰਨੀ ਸਿਹਤ ਬੀਮਾ (ਜਾਂ ਪ੍ਰਾਈਵੇਟ), ਉੱਚ ਕਵਰੇਜ",
+        childcare: "ਸਰਕਾਰੀ ਸਹਾਇਤਾ ਨਾਲ ਡੇਅ ਕੇਅਰ",
+        visa: "ਜਰਮਨ ਮਾਨਤਾ ਤੋਂ ਬਾਅਦ ਸਕਿਲਡ ਵਰਕਰ ਰੂਟ, ਉੱਚ ਮੰਗ",
+        citizenship: "4-5 ਸਾਲ ਬਾਅਦ ਸਥਾਈ ਨਿਵਾਸ, 5 ਸਾਲ ਬਾਅਦ ਪਾਸਪੋਰਟ",
+        family: "ਆਮਦਨ ਅਤੇ ਰਿਹਾਇਸ਼ ਦੀਆਂ ਸ਼ਰਤਾਂ ਪੂਰੀਆਂ ਹੋਣ ’ਤੇ ਪਰਿਵਾਰ ਆ ਸਕਦਾ ਹੈ",
+        language: "ਘੱਟੋ-ਘੱਟ ਜਰਮਨ B1, B2 ਵਧੀਆ",
+        worklife: "ਕੰਮ ਦੇ ਸਮੇਂ ਦੇ ਕਾਨੂੰਨਾਂ ਦੀ ਮਜ਼ਬੂਤ ਸੁਰੱਖਿਆ, ਭੁਗਤਾਨ ਵਾਲੀ ਛੁੱਟੀ ਅਤੇ ਮਾਤਾ-ਪਿਤਾ ਛੁੱਟੀ"
+    },
+
+    usa: {
+        salary: "60,000 - 100,000 USD ਪ੍ਰਤੀ ਸਾਲ (ਰਾਜ ਅਤੇ ਸ਼ਹਿਰ ਅਨੁਸਾਰ ਵੱਖਰਾ)",
+        taxes: "25-30% (ਕੋਈ ਸਾਰਵਭੌਮ ਸਮਾਜਿਕ ਕਵਰੇਜ ਨਹੀਂ)",
+        cost: "65-69",
+        disposable: "ਮੱਧਮ ਤੋਂ ਘੱਟ, ਉੱਚ ਕਿਰਾਇਆ ਅਤੇ ਸਿਹਤ ਸੇਵਾ ਖਰਚੇ",
+        leave: "10-15 ਦਿਨ/ਸਾਲ",
+        hours: "36-40 ਘੰਟੇ/ਹਫ਼ਤਾ, ਅਕਸਰ 10-12 ਘੰਟਿਆਂ ਦੀ ਸ਼ਿਫਟ",
+        healthcare: "ਕੋਈ ਸਾਰਵਭੌਮ ਕਵਰੇਜ ਨਹੀਂ, ਪ੍ਰਾਈਵੇਟ ਜਾਂ ਨੌਕਰੀਦਾਤਾ ਯੋਜਨਾਵਾਂ",
+        childcare: "ਬਹੁਤ ਮਹਿੰਗਾ ਅਤੇ ਨਿੱਜੀ ਭੁਗਤਾਨ",
+        visa: "ਰੋਜ਼ਗਾਰ ਅਧਾਰਿਤ ਵੀਜ਼ਾ ਪ੍ਰਕਿਰਿਆ ਜਟਿਲ",
+        citizenship: "ਗ੍ਰੀਨ ਕਾਰਡ ਵਿੱਚ ਸਾਲ ਲੱਗ ਸਕਦੇ ਹਨ, PR ਤੋਂ ~5 ਸਾਲ ਬਾਅਦ ਪਾਸਪੋਰਟ",
+        family: "ਪਰਿਵਾਰਕ ਇਮੀਗ੍ਰੇਸ਼ਨ ਲੰਬੀ ਅਤੇ ਮਹਿੰਗੀ ਪ੍ਰਕਿਰਿਆ",
+        language: "ਅੰਗਰੇਜ਼ੀ ਲਾਜ਼ਮੀ + NCLEX + ਰਾਜ ਪਰੀਖਿਆ",
+        worklife: "ਉੱਚ ਤਨਖਾਹ ਪਰ ਭਾਰੀ ਕੰਮ ਦਾ ਬੋਝ, ਬਰਨਆਉਟ ਦਾ ਖਤਰਾ"
+    },
+
+    canada: {
+        salary: "45,000 - 60,000 USD ਪ੍ਰਤੀ ਸਾਲ",
+        taxes: "25-30% (ਇਸ ਵਿੱਚ ਪੈਨਸ਼ਨ ਅਤੇ EI ਸ਼ਾਮਲ)",
+        cost: "59-70",
+        disposable: "ਸੰਤੁਲਿਤ, ਪਰ ਵੱਡੇ ਸ਼ਹਿਰਾਂ ਵਿੱਚ ਉੱਚ ਕਿਰਾਏ ਕਾਰਨ ਘੱਟ",
+        leave: "10-20 ਦਿਨ/ਸਾਲ",
+        hours: "36-40 ਘੰਟੇ/ਹਫ਼ਤਾ, 12 ਘੰਟਿਆਂ ਦੀ ਘੁੰਮਦੀ ਸ਼ਿਫਟ",
+        healthcare: "ਪਬਲਿਕ ਮੈਡੀਕੇਅਰ ਵਧੀਆ ਬੁਨਿਆਦੀ ਕਵਰੇਜ ਦਿੰਦਾ ਹੈ",
+        childcare: "ਸਰਕਾਰੀ ਅਤੇ ਨਿੱਜੀ ਮਿਲੀ-ਜੁਲੀ, ਸ਼ਹਿਰਾਂ ਵਿੱਚ ਮਹਿੰਗੀ",
+        visa: "ਐਕਸਪ੍ਰੈਸ ਐਂਟਰੀ (ਪੋਇੰਟ ਅਧਾਰਿਤ) + ਪ੍ਰਾਂਤੀ ਲਾਇਸੈਂਸ ਲਾਜ਼ਮੀ",
+        citizenship: "3-6 ਸਾਲਾਂ ਵਿੱਚ",
+        family: "ਸਥਾਈ ਨਿਵਾਸ ਮਿਲਣ ਤੋਂ ਬਾਅਦ ਪਰਿਵਾਰ ਆ ਸਕਦਾ ਹੈ",
+        language: "ਅੰਗਰੇਜ਼ੀ + ਪ੍ਰਾਂਤੀ ਰਜਿਸਟ੍ਰੇਸ਼ਨ (ਕੁਝ ਪ੍ਰਾਂਤਾਂ ਵਿੱਚ ਫ੍ਰੈਂਚ)",
+        worklife: "ਆਮ ਤੌਰ ’ਤੇ ਚੰਗਾ ਪਰ ਸਟਾਫ ਦੀ ਘਾਟ ਕਾਰਨ ਤਣਾਅ"
+    },
+
+    nz: {
+        salary: "45,000 - 55,000 USD ਪ੍ਰਤੀ ਸਾਲ",
+        taxes: "25-30% (ਕੁਝ ਸਮਾਜਿਕ ਕਵਰੇਜ ਸ਼ਾਮਲ)",
+        cost: "55-65",
+        disposable: "ਸੰਤੁਲਿਤ ਪਰ ਵੱਡੇ ਸ਼ਹਿਰਾਂ ਵਿੱਚ ਘੱਟ, ਮਹਿੰਗੀ ਕਿਰਿਆਣਾ",
+        leave: "20 ਦਿਨ/ਸਾਲ",
+        hours: "40 ਘੰਟੇ/ਹਫ਼ਤਾ",
+        healthcare: "ਸਾਰਵਭੌਮ ਸਿਹਤ ਪ੍ਰਣਾਲੀ",
+        childcare: "ਸੀਮਿਤ ਜਗ੍ਹਾਂ, ਕਈ ਵਾਰ ਉੱਚ ਫੀਸ",
+        visa: "ਨਰਸਾਂ ਲਈ ਵਰਕ-ਟੂ-ਰੇਜ਼ਿਡੈਂਸ ਵੀਜ਼ਾ, ਉੱਚ ਮੰਗ",
+        citizenship: "5-6 ਸਾਲ ਬਾਅਦ ਰਿਹਾਇਸ਼ ਤੋਂ ਨਾਗਰਿਕਤਾ",
+        family: "ਰਿਹਾਇਸ਼ ਅਤੇ ਆਮਦਨ ਦੀਆਂ ਸ਼ਰਤਾਂ ਪੂਰੀਆਂ ਹੋਣ ’ਤੇ ਪਰਿਵਾਰ ਆ ਸਕਦਾ ਹੈ",
+        language: "ਅੰਗਰੇਜ਼ੀ ਲਾਜ਼ਮੀ + OET/IELTS",
+        worklife: "ਨੌਕਰੀਦਾਤਾ ਅਤੇ ਖੇਤਰ ’ਤੇ ਕਾਫੀ ਨਿਰਭਰ"
+    },
+
+    uk: {
+        salary: "50,000 - 55,000 USD ਪ੍ਰਤੀ ਸਾਲ",
+        taxes: "25-30% (ਕੁਝ ਸਮਾਜਿਕ ਕਵਰੇਜ ਸ਼ਾਮਲ)",
+        cost: "59-68",
+        disposable: "ਲੰਡਨ ਵਰਗੇ ਸ਼ਹਿਰਾਂ ਵਿੱਚ ਉੱਚ ਕਿਰਾਏ ਅਤੇ ਮਹਿੰਗਾਈ ਕਾਰਨ ਘੱਟ",
+        leave: "27 ਦਿਨ/ਸਾਲ",
+        hours: "37.5 ਘੰਟੇ/ਹਫ਼ਤਾ",
+        healthcare: "NHS ਸਾਰਵਭੌਮ ਸਿਹਤ ਸੇਵਾ ਦਿੰਦਾ ਹੈ",
+        childcare: "ਨਰਸ ਦੀ ਤਨਖਾਹ ਦੇ ਮੁਕਾਬਲੇ ਬਹੁਤ ਮਹਿੰਗੀ",
+        visa: "NMC ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਨਾਲ ਸਕਿਲਡ ਵਰਕਰ ਵੀਜ਼ਾ",
+        citizenship: "5 ਸਾਲ ਬਾਅਦ → Indefinite Leave → ਬਾਅਦ ਵਿੱਚ ਨਾਗਰਿਕਤਾ",
+        family: "ਆਮਦਨ ਅਤੇ ਵੀਜ਼ਾ ਨਿਯਮ ਪੂਰੇ ਹੋਣ ’ਤੇ ਪਰਿਵਾਰ ਆ ਸਕਦਾ ਹੈ (ਉੱਚ ਫੀਸ)",
+        language: "OET/IELTS ਰਾਹੀਂ ਸਬੂਤ",
+        worklife: "ਸਟਾਫ ਦੀ ਲਗਾਤਾਰ ਘਾਟ ਮੋਰਾਲ ਅਤੇ ਵਰਕ-ਲਾਈਫ ਬੈਲੈਂਸ ਨੂੰ ਪ੍ਰਭਾਵਿਤ ਕਰਦੀ ਹੈ"
+    }
+};
+
+const benefits = [
+    { key: 'salary', label: 'ਕੁੱਲ ਤਨਖਾਹ' },
+    { key: 'taxes', label: 'ਟੈਕਸ' },
+    { key: 'cost', label: 'ਜੀਵਨ ਯਾਪਨ ਖਰਚ ਸੂਚਕ' },
+    { key: 'disposable', label: 'ਖਰਚਣ ਯੋਗ ਆਮਦਨ' },
+    { key: 'leave', label: 'ਛੁੱਟੀ (ਸਰਕਾਰੀ ਛੁੱਟੀਆਂ ਤੋਂ ਇਲਾਵਾ)' },
+    { key: 'hours', label: 'ਹਫ਼ਤੇ ਦੇ ਕੰਮ ਦੇ ਘੰਟੇ' },
+    { key: 'healthcare', label: 'ਸਿਹਤ ਬੀਮਾ' },
+    { key: 'childcare', label: 'ਬੱਚਿਆਂ ਦੀ ਦੇਖਭਾਲ' },
+    { key: 'visa', label: 'ਇਮੀਗ੍ਰੇਸ਼ਨ ਰਸਤਾ' },
+    { key: 'citizenship', label: 'ਨਾਗਰਿਕਤਾ ਦਾ ਰਸਤਾ' },
+    { key: 'family', label: 'ਪਰਿਵਾਰ ਮੁੜ ਮਿਲਾਪ' },
+    { key: 'language', label: 'ਭਾਸ਼ਾ ਦੀ ਲੋੜ' },
+    { key: 'worklife', label: 'ਕੰਮ-ਜੀਵਨ ਸੰਤੁਲਨ' }
+];
+
+        function updateComparison() {
+            const selected = document.getElementById('countrySelector').value;
+            const selectedCountry = data[selected];
+            const germany = data.germany;
+            const tbody = document.getElementById('tableBody');
+
+            tbody.innerHTML = benefits.map(benefit => `
+                <tr>
+                    <td class="benefit-col">${benefit.label}</td>
+                    <td class="germany-col">${germany[benefit.key]}</td>
+                    <td class="dynamic-col">${selectedCountry[benefit.key]}</td>
+                </tr>
+            `).join('');
+        }
+
+        // Initialize on load
+        updateComparison();
+    </script>
+
+</body><!-- End of .page_wrapper -->
+
+</html>
